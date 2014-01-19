@@ -33,8 +33,9 @@ label input[type=radio]	{ margin:-4px 0 0 0; }
 .progress				{ margin:0; }
 
 .btn-group				{ margin-bottom:15px; }
+	td .btn-group		{ margin-bottom:0; }
 	.btn-xs				{  }
 
 .icon-li				{ margin-right:5px; }
 
-ul.pagination			{ margin:5px 0; }
+ul.pagination			{ margin:0 0 15px; }

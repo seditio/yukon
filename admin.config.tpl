@@ -1,17 +1,13 @@
 <!-- BEGIN: MAIN -->
 			<div id="admin-config" class="row-fluid">
-{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-
-<!-- BEGIN: EDIT -->
 					<div class="col-md-12">
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
+<!-- BEGIN: EDIT -->
 					<div class="block">
 						<h5><i class="fa fa-cogs"></i> {PHP.L.Configuration}</h5>
 						<div class="wrapper">
 {ADMIN_CONFIG_EDIT_CUSTOM}
 							<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
-								<div class="btn-group">
-									<button type="submit" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
-								</div>
 								<table class="table table-bordered">
 									<thead>
 										<tr>
@@ -45,18 +41,21 @@
 									</tr>
 <!-- END: ADMIN_CONFIG_ROW_OPTION -->
 <!-- BEGIN: ADMIN_CONFIG_FIELDSET_END -->
-									<tr>
-										<td class="group_end" colspan="3"></td>
-									</tr>
 <!-- END: ADMIN_CONFIG_FIELDSET_END -->
 <!-- END: ADMIN_CONFIG_ROW -->
+									<tr>
+										<td class="group_end" colspan="3">
+											<button type="submit" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
+										</td>
+									</tr>
 								</table>
 							</form>
 						</div>
 					</div>
-					</div>
 <!-- END: EDIT -->
-
+				</div>
+			</div>
+			
 <!-- BEGIN: DEFAULT -->
 <!-- BEGIN: ADMIN_CONFIG_COL -->
 				<div class="col-md-4">
@@ -83,5 +82,5 @@
 				</div>
 <!-- END: ADMIN_CONFIG_COL -->
 <!-- END: DEFAULT -->
-
+			
 <!-- END: MAIN -->

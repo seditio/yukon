@@ -119,6 +119,9 @@
 						</div>
 						<div id="users" class="accordion-body collapse">
 							<ul class="accordion-inner">
+<!-- IF {PHP.cot_plugins_active.usermanager} -->
+								<li><i class="fa fa-users"></i><a href="{PHP|cot_url('admin','m=other&p=usermanager')}">{PHP.L.Usermanager}</a></li>
+<!-- ENDIF -->
 								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
 								<li><i class="fa fa-bars"></i><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
 								<li><i class="fa fa-lock"></i><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>

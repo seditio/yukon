@@ -8,7 +8,6 @@
 							<form name="saverights" id="saverights" action="{ADMIN_RIGHTS_FORM_URL}" method="post" class="ajax">
 								<div class="btn-group">
 									<a class="btn btn-primary" href="{ADMIN_RIGHTS_ADVANCED_URL}"><i class="fa fa-hand-o-right"></i> {PHP.L.ReadMore}</a>
-									<button type="submit" class="btn btn-primary"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
 								</div>
 <!-- IF {PHP.g} > 5 -->
 								<table class="table table-bordered">
@@ -79,6 +78,7 @@
 <!-- END: RIGHTS_ROW -->
 								</table>
 <!-- END: RIGHTS_SECTION -->
+								<p><button type="submit" class="submit btn btn-primary"><i class="fa fa-refresh"></i> {PHP.L.Update}</button></p>
 							</form>
 						</div>
 					</div>

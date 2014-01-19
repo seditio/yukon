@@ -156,6 +156,10 @@ h6		{ font-family:'Open Sans', sans-serif; ont-size:13px; margin:0 0 10px; }
 .ext-icon				{ margin:5px 10px 0 0; display:block; float:left; }
 	.ext-icon + a		{ display:block; overflow:hidden; }
 	.ext-icon + a + p	{ overflow:hidden; }
+	
+.ext-cell img		{ margin:2px 10px 0 0; display:block; float:left; }
+	.ext-cell a		{ font-size:14px; font-weight:bold; display:block; overflow:hidden; }
+	.ext-cell p		{ font-size:12px; line-height:16px; margin-bottom:0; overflow:hidden; }
 
 .width5		{ width:5%; }
 .width10	{ width:10%; }
@@ -177,10 +181,6 @@ h6		{ font-family:'Open Sans', sans-serif; ont-size:13px; margin:0 0 10px; }
 .width90	{ width:90%; }
 .width95	{ width:95%; }
 .width100	{ width:100%; }
-
-.ext-cell img		{ margin:2px 10px 0 0; display:block; float:left; }
-	.ext-cell a		{ font-size:14px; font-weight:bold; display:block; overflow:hidden; }
-	.ext-cell p		{ font-size:12px; line-height:16px; margin-bottom:0; overflow:hidden; }
 
 .alert h4			{ font-size:16px; }
 .alert h4+ul			{ margin:0; list-style:none; }

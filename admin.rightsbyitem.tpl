@@ -7,7 +7,7 @@
 						<div class="wrapper">
 							<div class="btn-group">
 								<a class="btn btn-primary" href="{ADMIN_RIGHTSBYITEM_ADVANCED_URL}"><i class="fa fa-hand-o-right"></i> {PHP.L.ReadMore}</a>
-								<button type="submit" class="btn btn-danger"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
+								
 							</div>
 							<form name="saverightsbyitem" id="saverightsbyitem" action="{ADMIN_RIGHTSBYITEM_FORM_URL}" method="post" class="ajax">
 								<table class="table table-bordered">
@@ -51,6 +51,9 @@
 											<td class="text-center">{ADMIN_RIGHTSBYITEM_ROW_USER}{ADMIN_RIGHTSBYITEM_ROW_PRESERVE}</td>
 										</tr>
 <!-- END: RIGHTSBYITEM_ROW -->
+										<tr>
+											<td colspan="{ADMIN_RIGHTSBYITEM_4ADV_COLUMNS}"><button type="submit" class="submit btn btn-danger"><i class="fa fa-refresh"></i> {PHP.L.Update}</button></td>
+										</tr>
 									</tbody>
 								</table>
 							</form>

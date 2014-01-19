@@ -103,6 +103,7 @@ $().ready(function() {
 	});
 	
 	$('li.loginout a').wrapInner('<span />').prepend('<i class="fa fa-lock" /> ').addClass('btn btn-default btn-xs');
+	$('#usergrouplist ul').addClass('list-unstyled nomargin').find('input').css({'margin-right': '5px', 'display': 'inline-block'});
 
 //	$('div.block').each(function(){
 //		$(this).children(':gt(0)').wrapAll('<div class="wrapper" />');
@@ -144,5 +145,7 @@ $().ready(function() {
 		if ($(this).html())
 			$(this).wrapInner('<span />');
 	});
+	
+	$('table input[type=checkbox]').css('display','inline-block');
 	
 });
