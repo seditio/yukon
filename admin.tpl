@@ -4,10 +4,10 @@
 			<div id="topbar" class="col-md-12">
 				<div>
 					<ul id="layout" class="list-unstyled">
-						<li id="hds"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.hds0} / {PHP.L.hds1}"><i class="fa fa-arrows-h"></i> <span>{PHP.L.hds0}</span></a></li>
-						<li id="hdn"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.hdn0} / {PHP.L.hdn1}"><i class="fa fa-arrows-v"></i> <span>{PHP.L.hdn0}</span></a></li>
-						<li id="str"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.str0} / {PHP.L.str1}"><i class="fa fa-arrows-alt"></i> <span>{PHP.L.str0}</span></a></li>
-						<li id="rem"><a href="#" class="btn btn-default btn-xs"><i class="fa fa-times"></i> <span>{PHP.L.Reset}</span></a></li>
+						<li id="hidesidebar"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.hds0} / {PHP.L.hds1}"><i class="fa fa-arrows-h"></i> <span>{PHP.L.hds0}</span></a></li>
+						<li id="hidenavigation"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.hdn0} / {PHP.L.hdn1}"><i class="fa fa-arrows-v"></i> <span>{PHP.L.hdn0}</span></a></li>
+						<li id="fullscreen"><a href="#" class="btn btn-default btn-xs" rel="{PHP.L.str0} / {PHP.L.str1}"><i class="fa fa-arrows-alt"></i> <span>{PHP.L.str0}</span></a></li>
+						<li id="removecookies"><a href="#" class="btn btn-default btn-xs"><i class="fa fa-times"></i> <span>{PHP.L.Reset}</span></a></li>
 					</ul>
 					<ul id="settings" class="list-unstyled">
 						<li>
@@ -62,14 +62,14 @@
 					</ul>
 				</div>
 			
-				<div id="menu" class="accordion">
-					<div class="accordion-group">
-						<div class="accordion-heading">
+				<div id="menu" class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#mainnav">
 								{PHP.L.Navigation}
 							</a>
 						</div>
-						<div id="mainnav" class="accordion-body collapse">
+						<div id="mainnav" class="panel-collapse collapse">
 							<ul class="accordion-inner">
 								<li><i class="fa fa-home"></i><a href="{PHP|cot_url('admin')}">{PHP.L.Home}</a></li>
 								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin', 'm=config')}">{PHP.L.Configuration}</a></li>
@@ -80,13 +80,13 @@
 							</ul>
 						</div>
 					</div>
-					<div class="accordion-group">
-						<div class="accordion-heading">
+					<div class="panel panel-default">
+						<div class="panel-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#general">
 								{PHP.L.home_ql_b1_title}
 							</a>
 						</div>
-						<div id="general" class="accordion-body collapse">
+						<div id="general" class="panel-collapse collapse">
 							<ul class="accordion-inner">
 								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
 								<li><i class="fa fa-code"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
@@ -97,37 +97,43 @@
 							</ul>
 						</div>
 					</div>
-					<div class="accordion-group">
-						<div class="accordion-heading">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#pages">
 								{PHP.L.Pages}
 							</a>
 						</div>
-						<div id="pages" class="accordion-body collapse">
+						<div id="pages" class="panel-collapse collapse">
 							<ul class="accordion-inner">
-								<li><i class="fa fa-ban"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a></li>
-								<li><i class="fa fa-plus"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
-								<li><i class="fa fa-bars"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
+								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
+								<li><i class="fa fa-code"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
+								<li><i class="fa fa-adjust"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
+								<li><i class="fa fa-tasks"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
+								<li><i class="fa fa-globe"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
+								<li><i class="fa fa-bars"></i><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="accordion-group">
-						<div class="accordion-heading">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
 							<a class="accordion-toggle" data-toggle="collapse" data-parent="#menu" href="#users">
 								{PHP.L.Users}
 							</a>
 						</div>
-						<div id="users" class="accordion-body collapse">
+						<div id="users" class="panel-collapse collapse">
 							<ul class="accordion-inner">
-<!-- IF {PHP.cot_plugins_active.usermanager} -->
-								<li><i class="fa fa-users"></i><a href="{PHP|cot_url('admin','m=other&p=usermanager')}">{PHP.L.Usermanager}</a></li>
-<!-- ENDIF -->
-								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
-								<li><i class="fa fa-bars"></i><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
-								<li><i class="fa fa-lock"></i><a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a></li>
+								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a></li>
+								<li><i class="fa fa-code"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a></li>
+								<li><i class="fa fa-adjust"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a></li>
+								<li><i class="fa fa-tasks"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=menus')}">{PHP.L.home_ql_b1_4}</a></li>
+								<li><i class="fa fa-globe"></i><a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a></li>
+								<li><i class="fa fa-bars"></i><a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a></li>
 							</ul>
 						</div>
 					</div>
+					
 				</div>
 			
 <!-- IF {PHP.cot_plugins_active.adminstats} -->

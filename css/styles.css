@@ -19,7 +19,7 @@ input, button, select, textarea	{ font-family:'Open Sans', sans-serif!important;
 	#sidebar div#profile					{ margin:0 10px; padding:5px 15px; background:#fff; border:1px solid #ccd6de; overflow:hidden; }
 	#sidebar div#profile ul				{ margin:0; list-style:none; overflow:hidden; }
 	#sidebar div#profile ul li				{ margin:2px 0 5px; }
-	#sidebar div#profile ul li a				{ font-size:10.5px; padding:1px 8px 2px; background:#e6e6e6; text-overflow:ellipsis; white-space:nowrap; display:block; overflow:hidden; opacity:.65; }
+	#sidebar div#profile ul li a				{ font-size:10.5px; padding:1px 8px 2px; background:#e6e6e6; text-align:left; text-overflow:ellipsis; white-space:nowrap; display:block; overflow:hidden; opacity:.65; }
 	#sidebar div#profile ul li a:hover		{ opacity:1; }
 	
 	#sidebar hr							{ margin:5px 0; border:0; }
@@ -31,17 +31,22 @@ input, button, select, textarea	{ font-family:'Open Sans', sans-serif!important;
 		#menu a:hover	 				{ text-decoration:none!important; }
 		#menu>li:first-child a			{ color:#fff; font-weight:600; text-shadow:0 1px 0 #222; background:#777; border:1px solid #555; display:block; }
 		
-	#menu .accordion-group				{ border:0; border-radius:0; }
-	#menu .accordion-inner				{ border:0; }
-	#menu .accordion-heading				{ padding:8px 15px; border-bottom:1px solid #bbc5cd; }
-	#menu .accordion-toggle				{ color:#495b79; font-weight:600; }
-	#menu .accordion-body				{ background:#fff; }
-	#menu .accordion-inner				{ padding:0; }
-	#menu .accordion-body li				{ color:#555; padding:6px 5px 6px 14px; border-bottom:1px solid #d8e0e6; }
-	#menu .accordion-body li a				{ color:#555; font-size:10px; font-weight:600; text-transform:uppercase; }
-	#menu .accordion-body li a:hover		{ font-weight:700; }
-	#menu .accordion-body li i				{ margin-right:6px; }
+	#menu .panel							{ border:0; border-radius:0; }
+	
+	#menu .panel-heading					{ padding:0; background:#dadee1; border-bottom:1px solid #bbc5cd; }
+	#menu .panel-heading a				{ padding:8px 15px; display:block; }
+	
+	#menu .panel-collapse				{ background:#fff; }
+	#menu .panel-collapse li				{ color:#555; padding:6px 5px 6px 14px; border-bottom:1px solid #d8e0e6; }
+	#menu .panel-collapse li a				{ color:#555; font-size:10px; font-weight:600; text-transform:uppercase; }
+	#menu .panel-collapse li a:hover		{ font-weight:700; }
+	#menu .panel-collapse li i				{ margin-right:6px; }
 
+	#menu .accordion-toggle				{ color:#495b79; font-weight:600; }
+	#menu .accordion-inner				{ margin:0; padding:0; border:0; }
+
+	.panel-group .panel + .panel			{ margin-top:0!important; }
+	
 	.miniwidget							{ margin:0 10px 5px; padding:8px 10px; background:#fff; border:1px solid #ccd6de; }
 	.miniwidget strong					{ color:#000; font-weight:600; margin:0 0 5px; display:block; }
 	.miniwidget ul, .miniwidget p			{ font-size:11px; font-weight:100; text-shadow:0 1px 0 #fff; margin:0; }
@@ -51,10 +56,10 @@ input, button, select, textarea	{ font-family:'Open Sans', sans-serif!important;
 	
 #content								{ padding:0 15px; background:#f5f5f5; overflow:hidden; position:relative; }
 
-.container-fluid.menu-hidden #sidebar			{ display:none; }
-.container-fluid.menu-hidden #content			{ margin:0; }
-.container-fluid.menu-hidden button.btn-navbar	{ border-left:0!important; left:0!important; }
-.container-fluid.menu-hidden #layout				{ margin-left:30px!important; }
+.container-fluid.sidebar-hidden #sidebar			{ display:none; }
+.container-fluid.sidebar-hidden #content			{ margin:0; }
+.container-fluid.sidebar-hidden button.btn-navbar	{ border-left:0!important; left:0!important; }
+.container-fluid.sidebar-hidden #layout			{ margin-left:30px!important; }
 
 div#topbar							{ padding:0; }
 	div#topbar > div					{ padding:8px 0 7px; background:#495b79; border-bottom:1px solid #d1d1d1; overflow:hidden; position:relative; }
@@ -188,6 +193,10 @@ h6		{ font-family:'Open Sans', sans-serif; ont-size:13px; margin:0 0 10px; }
 .clearfix							{ *zoom:1; }
 .clearfix:before, .clearfix:after	{ display:table; line-height:0; content:""; }
 .clearfix:after						{ clear:both; }
+
+.usergrouplist ul		{ margin:0; padding:0; list-style:none; }
+	.usergrouplist ul li *	{ margin-right:5px; display:inline-block; }
+	.usergrouplist ul li a	{ vertical-align:-3px; }
 
 @media (max-width: 768px)	{
 

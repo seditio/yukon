@@ -20,6 +20,7 @@
 	<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
 	<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/styles.css" type="text/css" rel="stylesheet" />
 	<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/overrides.css" type="text/css" rel="stylesheet" />
+	<link href="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/css/modalbox.css" type="text/css" rel="stylesheet" />
 	
 	<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/js/jquery.cookie.js" type="text/javascript"></script>
