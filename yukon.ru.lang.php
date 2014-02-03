@@ -1,11 +1,11 @@
 <?php
 /**
- * Пользовательский файл локализации скина Lotus
+ * Пользовательский файл локализации скина Yukon
  *
  * @package Cotonti
- * @version 0.7.0
+ * @version 0.9.16
  * @author Cotonti Team
- * @copyright Copyright (c) Cotonti Team 2008-2013
+ * @copyright Copyright (c) Cotonti Team 2008-2014
  * @license BSD
  */
 
