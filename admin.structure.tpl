@@ -155,8 +155,8 @@
 					</form>
 					<p class="text-center">{PHP.L.Total}: {ADMIN_STRUCTURE_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_STRUCTURE_COUNTER_ROW}</p>
 <!-- IF {ADMIN_STRUCTURE_PAGNAV} -->
-					<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
-						<ul>{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT}</ul>
+					<div class="text-{PHP.R.admin-config-pagialign}">
+						<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{ADMIN_STRUCTURE_PAGINATION_PREV}{ADMIN_STRUCTURE_PAGNAV}{ADMIN_STRUCTURE_PAGINATION_NEXT}</ul>
 					</div>
 <!-- ENDIF -->
 <!-- END: DEFAULT -->
