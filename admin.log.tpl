@@ -44,8 +44,8 @@
 							</table>
 							<p class="text-center">{PHP.L.Total}: {ADMIN_LOG_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_LOG_ON_PAGE}</p>
 <!-- IF {ADMIN_LOG_PAGNAV} -->
-							<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
-								<ul>{ADMIN_LOG_PAGINATION_PREV}{ADMIN_LOG_PAGNAV}{ADMIN_LOG_PAGINATION_NEXT}</ul>
+							<div class="text-{PHP.R.admin-config-pagialign}">
+								<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{ADMIN_LOG_PAGINATION_PREV}{ADMIN_LOG_PAGNAV}{ADMIN_LOG_PAGINATION_NEXT}</ul>
 							</div>
 <!-- ENDIF -->
 						</div>
