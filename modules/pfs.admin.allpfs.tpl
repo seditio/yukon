@@ -19,8 +19,8 @@
 		</table>
 		<p class="text-center">{PHP.L.Total}: {ADMIN_ALLPFS_TOTALITEMS}, <span class="lower">{PHP.L.Onpage}:</span> {ADMIN_ALLPFS_ON_PAGE}</p>
 <!-- IF {ADMIN_ALLPFS_PAGNAV} -->
-		<div class="pagination pagination-{PHP.R.admin-config-pagisize} pagination-{PHP.R.admin-config-pagialign}">
-			<ul>{ADMIN_ALLPFS_PAGINATION_PREV}{ADMIN_ALLPFS_PAGNAV}{ADMIN_ALLPFS_PAGINATION_NEXT}</ul>
+		<div class="text-{PHP.R.admin-config-pagialign}">
+			<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{ADMIN_ALLPFS_PAGINATION_PREV}{ADMIN_ALLPFS_PAGNAV}{ADMIN_ALLPFS_PAGINATION_NEXT}</ul>
 		</div>
 <!-- ENDIF -->
 <!-- END: MAIN -->

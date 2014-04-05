@@ -29,7 +29,7 @@
 							<a href="{ADMIN_STRUCTURE_URL_EXTRAFIELDS}" class="btn btn-primary"><i class="fa fa-cog"></i> {PHP.L.adm_extrafields}</a>
 							<a href="{ADMIN_PAGE_STRUCTURE_RESYNCALL}" class="ajax btn btn-primary" title="{PHP.L.adm_tpl_resyncalltitle}"><i class="fa fa-refresh"></i> {PHP.L.Resync}</a>
 <!-- IF {ADMIN_STRUCTURE_I18N_URL} -->
-							<a href="{ADMIN_STRUCTURE_I18N_URL}" class="btn btn-primary"><i class="fa fa-globe"></i> {PHP.L.i18n_structure}</a>
+							<a href="{ADMIN_STRUCTURE_I18N_URL}" class="button">{PHP.L.i18n_structure}</a>
 <!-- ENDIF -->
 						</div>
 <!-- BEGIN: OPTIONS -->

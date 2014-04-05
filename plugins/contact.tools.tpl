@@ -26,7 +26,11 @@
 		 </tr>
 <!-- END: DATA -->
 	</table>
-	<p class="paging">{CONTACT_PREV}{CONTACT_PAGINATION}{CONTACT_NEXT}</p>
+<!-- IF {CONTACT_PAGINATION} -->
+	<div class="text-{PHP.R.admin-config-pagialign}">
+		<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{CONTACT_PREV}{CONTACT_PAGINATION}{CONTACT_NEXT}</ul>
+	</div>
+<!-- ENDIF -->
 
 <!-- BEGIN: VIEW -->
 	<h2 class="users">{PHP.L.contact_view} #{CONTACT_ID} (<!-- IF {CONTACT_SUBJECT} -->{CONTACT_SUBJECT}<!-- ELSE -->{PHP.L.contact_nosubject}<!-- ENDIF -->)</h2>

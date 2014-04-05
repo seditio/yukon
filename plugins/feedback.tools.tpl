@@ -26,7 +26,12 @@
 		 </tr>
 <!-- END: DATA -->
 	</table>
-	<p class="paging">{CONTACT_PREV}{CONTACT_PAGINATION}{CONTACT_NEXT}</p>
+	
+<!-- IF {CONTACT_PAGINATION} -->
+	<div class="text-{PHP.R.admin-config-pagialign}">
+		<ul class="pagination pagination-{PHP.R.admin-config-pagisize}">{CONTACT_PREV}{CONTACT_PAGINATION}{CONTACT_NEXT}</ul>
+	</div>
+<!-- ENDIF -->
 
 <!-- BEGIN: VIEW -->
 	<h2 class="users">{PHP.L.feedback_view} #{CONTACT_ID}</h2>
