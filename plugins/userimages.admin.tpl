@@ -43,7 +43,7 @@
 										</td>
 										<td class="action centerall replaceLink">
 											<div class="btn-group">
-												<a class="btn btn-default btn-{PHP.R.admin-config-buttonsize2}" type="submit"><i class="fa fa-refresh"></i> <span>{PHP.L.Update}</span></a>
+												<button class="btn btn-default btn-{PHP.R.admin-config-buttonsize2}" type="submit"><i class="fa fa-refresh"></i> <span>{PHP.L.Update}</span></button>
 												<a class="btn btn-default btn-{PHP.R.admin-config-buttonsize2}" href="{CODE|cot_url('admin','m=other&p=userimages&a=remove&code=$this')}"><i class="fa fa-times"></i>  {PHP.L.Delete}</a>
 											</div>
 										</td>

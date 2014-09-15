@@ -25,10 +25,25 @@
 					{ADMIN_HOME_MAINPANEL}
 <!-- END: MAINPANEL -->
 <!-- IF {PHP.cot_plugins_active.pagelist} -->
-{PHP|pagelist('pagelist.admin','5','page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> {PHP.R.Topbest} {PHP.L.Topbestpages}</h5>
+{PHP.R.Topbest|pagelist('pagelist.admin',$this,'page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
+					</div>
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> {PHP.R.Toprecent} {PHP.L.Toprecentpages} за {PHP.R.Toprecent} дней</h5>
+{PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
+					</div>
 <!-- ENDIF -->
 				</div>
 				<div class="col-md-4">
+<!-- IF {PHP.cot_plugins_active.pagecom} -->
+{PHP|pagecom('pagecom.admin','5','0','date','','','0')}
+<!-- ENDIF -->
+<!-- IF {PHP.cot_plugins_active.userinfo} -->
+					<div class="block">
+{PHP|userinfo_lastseen('userinfo.lastseen')}
+					</div>
+<!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.adminstats} -->
 					<div class="block">
 						<h5><i class="fa fa-code"></i> {PHP.L.Database}:</h5>
@@ -148,9 +163,6 @@
 							</table>
 						</div>
 					</div>
-<!-- ENDIF -->
-<!-- IF {PHP.cot_plugins_active.pagecom} -->
-{PHP|pagecom('pagecom.admin','5','0','date','','','0')}
 <!-- ENDIF -->
 				</div>
 			</div>

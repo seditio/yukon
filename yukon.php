@@ -29,3 +29,7 @@ $R['input_text_metadesc'] = '<textarea name="{$name}" rows="2" cols="64" maxleng
 
 // Recent Activities
 $R['Recent'] = '14';
+
+// Top Lists @ Home Page
+$R['Topbest'] = '10';
+$R['Toprecent'] = '10';

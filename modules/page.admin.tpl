@@ -59,7 +59,7 @@
 										</td>
 										<td class="{ADMIN_PAGE_ODDEVEN}">
 											<div id="mor_{PHP.ii}" class='mor_info_on_off'>
-												<span class="strong" style="cursor:hand;">{ADMIN_PAGE_SHORTTITLE}</span>
+												<span class="strong" style="cursor:hand;">{ADMIN_PAGE_SHORTTITLE} ({ADMIN_PAGE_COUNT})</span>
 												<div class="moreinfo">
 													<hr />
 													<table class="flat">

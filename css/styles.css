@@ -136,11 +136,11 @@ div.adminconfigmore					{ color:#666; font-size:11px; text-shadow:0 1px 0 #fff; 
 /* 3. Headings
 -------------------------------------------------- */
 
-h1		{ color:#575655; font-family:'Open Sans', sans-serif; font-size:24px; font-weight:700; margin:15px 15px 10px; }
+h1				{ color:#575655; font-family:'Open Sans', sans-serif; font-size:24px; font-weight:700; margin:15px 15px 10px; }
 h4				{ font-family:'Open Sans', sans-serif; font-size:15px; font-weight:600; text-transform:uppercase; margin:0 0 10px; }
 	.alert h4	{ margin:0; }
-h5		{ font-family:'Open Sans', sans-serif; }
-h6		{ font-family:'Open Sans', sans-serif; ont-size:13px; margin:0 0 10px; }
+h5				{ font-family:'Open Sans', sans-serif; }
+h6				{ font-family:'Open Sans', sans-serif; font-size:13px; margin:0 0 10px; }
 	
 /* 99. Misc
 -------------------------------------------------- */
