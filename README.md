@@ -4,5 +4,5 @@ The idea behind the project was to allow Cotonti Siena users to access main admi
 
 ##Installation
 1. Download and copy the theme into the themes/admin/yukon folder
-2. Alter the admintheme variable in the cpnfig.php"
-```$cfg['admintheme'] = 'yukon';		// Put custom administration theme name here```
+2. Alter the admintheme variable in the config.php:
+`$cfg['admintheme'] = 'yukon';		// Put custom administration theme name here`
