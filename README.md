@@ -22,5 +22,5 @@ Theme distributed under the BSD license.
 [Dmitri Beliavski](http://github.com/seditio)
 
 ##References
-- http://www.cotonti.com -- Cotonti CMF homepage
-- http://github.com/seditio/yukon -- Latest version of the Yukon Theme
+- [cotonti.com](http://www.cotonti.com) -- Cotonti CMF homepage
+- [github.com/seditio/yukon](http://github.com/seditio/yukon) -- Latest version of the Yukon Theme
