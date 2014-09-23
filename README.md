@@ -14,3 +14,13 @@ Not yet. Screenshots are available @ http://www.cotonti.com/themes/yukon
 ##Compatibility & Requirements
 Can be used with the latest version of the Cotonti Siena CMF, possibly with some not so old previous releases.
 Cotonti Genoa? Sorry.
+
+##Licence
+Theme distributed under the BSD license.
+
+##Author
+Dmitri Beliavski
+
+##References
+(www.cotonti.com) -- Cotonti CMF homepage
+(www.github.com/seditio/yukon) -- Latest version of the Yukon Theme
