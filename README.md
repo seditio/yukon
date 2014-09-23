@@ -19,7 +19,7 @@ Cotonti Genoa? Sorry.
 Theme distributed under the BSD license.
 
 ##Author
-Dmitri Beliavski
+[Dmitri Beliavski](http://github.com/seditio)
 
 ##References
 - http://www.cotonti.com -- Cotonti CMF homepage
