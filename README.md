@@ -30,6 +30,9 @@ and the following plugins:
 1. Download and copy the theme into the themes/admin/yukon folder
 2. Alter the admintheme variable in the config.php: `$cfg['admintheme'] = 'yukon';`
 
+##User Feedback & Updates
+I try to update the theme as frequently as possible. Should you find a bug or have a suggestion, please [open an issue](https://github.com/seditio/yukon/issues).
+
 ##Demo
 Not yet. Screenshots are available @ http://www.cotonti.com/themes/yukon
 
