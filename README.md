@@ -8,6 +8,7 @@ Besides the reworked .tpl files of the standard admin theme Yukon contains templ
 - page
 - pfs
 - users
+
 and the following plugins:
 - banlist
 - bbcode
