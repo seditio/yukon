@@ -31,7 +31,7 @@ and the following plugins:
 2. Alter the admintheme variable in the config.php: `$cfg['admintheme'] = 'yukon';`
 
 ##User Feedback & Updates
-I try to update the theme as frequently as possible. Should you find a bug or have a suggestion, please [open an issue](https://github.com/seditio/yukon/issues).
+I try to update the theme as frequently as possible. Should you find a bug or have a suggestion, please [open an issue](https://github.com/seditio/yukon/issues) (English and Russian).
 
 ##Demo
 Not yet. Screenshots are available @ http://www.cotonti.com/themes/yukon
