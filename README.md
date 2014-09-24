@@ -48,5 +48,6 @@ Theme distributed under the BSD license.
 [Dmitri Beliavski](http://github.com/seditio)
 
 ##References
-- [cotonti.com](http://www.cotonti.com) -- Cotonti CMF homepage
 - [github.com/seditio/yukon](http://github.com/seditio/yukon) -- Latest version of the Yukon Theme
+- [www.cotonti.com](http://www.cotonti.com) -- Cotonti CMF homepage
+- [www.seditio.by](http://www.seditio.by) -- we build Cotonti-powered websites here
