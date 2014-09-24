@@ -29,6 +29,7 @@ and the following plugins:
 ##Installation
 1. Download and copy the theme into the themes/admin/yukon folder
 2. Alter the admintheme variable in the config.php: `$cfg['admintheme'] = 'yukon';`
+3. (Optional but recommened) Download and install [Adminstats Plugin](https://github.com/Dayver/adminstats) by Pavel Tkachenko to output configuration info at the admin homepage
 
 ##User Feedback & Updates
 I try to update the theme as frequently as possible. Should you find a bug or have a suggestion, please [open an issue](https://github.com/seditio/yukon/issues) (English and Russian).
