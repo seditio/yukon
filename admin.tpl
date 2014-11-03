@@ -106,6 +106,9 @@
 						</div>
 						<div id="pages" class="panel-collapse collapse">
 							<ul class="accordion-inner">
+<!-- IF {PHP.cot_plugins_active.csv_import} -->
+								<li><i class="fa fa-database"></i><a href="{PHP.usr.id|cot_url('admin','m=other&p=csv_import')}">CSV Import</a></li>
+<!-- ENDIF -->
 								<li><i class="fa fa-ban"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a></li>
 								<li><i class="fa fa-plus"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
 								<li><i class="fa fa-bars"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
