@@ -142,6 +142,16 @@ h4				{ font-family:'Open Sans', sans-serif; font-size:15px; font-weight:600; te
 h5				{ font-family:'Open Sans', sans-serif; }
 h6				{ font-family:'Open Sans', sans-serif; font-size:13px; margin:0 0 10px; }
 	
+/* 4. Extensions status
+-------------------------------------------------- */
+
+.extension.missing		{ color:#ac5866; }
+.extension.notinstalled	{ color:#ac5866; }
+.extension.partrunning	{ color:#a78731; }
+.extension.paused		{ color:#5882ac; }
+.extension.present		{ color:#739e48; }
+.extension.running		{ color:#739e48; }
+
 /* 99. Misc
 -------------------------------------------------- */
 
