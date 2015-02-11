@@ -19,6 +19,7 @@
 								{PHP.L.Available}: {ADMIN_CACHE_MEMORY_AVAILABLE} / {ADMIN_CACHE_MEMORY_MAX} {PHP.L.bytes}
 							</p>
 <!-- END: ADMIN_CACHE_MEMORY -->
+							<div class="table-responsive">
 							<table class="table table-bordered">
 								<thead>
 									<tr>
@@ -54,6 +55,7 @@
 									</tr>
 								</thead>
 							</table>
+							</div>
 						</div>
 					</div>
 				</div>

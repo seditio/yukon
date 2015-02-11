@@ -1,19 +1,13 @@
 <?php
 /**
- * Пользовательский файл локализации скина Yukon
+ * Yukon Russian Locale
  *
- * @package Cotonti
- * @version 0.9.16
- * @author Cotonti Team
- * @copyright Copyright (c) Cotonti Team 2008-2014
- * @license BSD
+ * @package yukon
+ * @author seditio.by
+ * @copyright Copyright (c) seditio.by 2014-2015
  */
 
 defined('COT_CODE') or die('Wrong URL.');
-
-/**
- * Данный файл предназначен для дополнительных пользовательских локализационных строк
- */
 
 $L['home_ql_b1_1'] = 'Настройки системы';
 
@@ -54,3 +48,6 @@ $L['Usermanager'] = 'Менеджер пользователей';
 
 $L['Topbestpages'] = 'лучших страниц за все время';
 $L['Toprecentpages'] = 'лучших новых страниц';
+$L['Within'] = 'за последние';
+
+$L['Newcomments'] = 'Новые комментарии';

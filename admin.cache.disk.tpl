@@ -9,6 +9,7 @@
 								<a href="{ADMIN_DISKCACHE_URL_PURGE}" class="ajax btn btn-danger btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-eraser"></i> {PHP.L.adm_purgeall}</a>
 								<a href="{ADMIN_DISKCACHE_URL_REFRESH}" class="ajax btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-refresh"></i> {PHP.L.Refresh}</a>
 							</div>
+							<div class="table-responsive">
 							<table class="table table-bordered">
 								<thead>
 									<tr>
@@ -41,6 +42,7 @@
 									</tr>
 								</thead>
 							</table>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -30,13 +30,13 @@
 {PHP.R.Topbest|pagelist('pagelist.admin',$this,'page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
 					</div>
 					<div class="block">
-						<h5><i class="fa fa-comments"></i> {PHP.R.Toprecent} {PHP.L.Toprecentpages} за {PHP.R.Toprecent} дней</h5>
+						<h5><i class="fa fa-comments"></i> {PHP.R.Toprecent} {PHP.L.Toprecentpages} {PHP.L.Within} {PHP.R.Toprecent|cot_declension($this, 'Days')}</h5>
 {PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
 					</div>
 <!-- ENDIF -->
 				</div>
 				<div class="col-md-4">
-<!-- IF {PHP.cot_plugins_active.pagecom} -->
+<!-- IF {PHP.cot_plugins_active.pagecom} AND {PHP.cot_plugins_active.comments} -->
 {PHP|pagecom('pagecom.admin','5','0','date','','','0')}
 <!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.userinfo} -->

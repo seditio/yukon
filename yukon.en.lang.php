@@ -1,15 +1,13 @@
 <?php
 /**
- * Yukon locale
+ * Yukon English Locale
  *
- * @package Cotonti
- * @author Cotonti Team
- * @copyright Copyright (c) Cotonti Team 2008-2014
- * @license BSD
+ * @package yukon
+ * @author seditio.by
+ * @copyright Copyright (c) seditio.by 2014-2015
  */
 
 defined('COT_CODE') or die('Wrong URL.');
-
 
 $L['home_ql_b1_1'] = 'Settings';
 
@@ -45,3 +43,11 @@ $L['Retusers'] = 'User sessions';
 
 $L['Extcontrol'] = 'Extension management';
 $L['Info'] = 'Information';
+
+$L['Usermanager'] = 'User Manager';
+
+$L['Topbestpages'] = 'best pages ever';
+$L['Toprecentpages'] = 'best new pages';
+$L['Within'] = 'within last';
+
+$L['Newcomments'] = 'New comments';

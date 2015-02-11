@@ -8,6 +8,7 @@
 						<div class="wrapper">
 {ADMIN_CONFIG_EDIT_CUSTOM}
 							<form name="saveconfig" id="saveconfig" action="{ADMIN_CONFIG_FORM_URL}" method="post" class="ajax">
+								<div class="table-responsive">
 								<table class="table table-bordered">
 									<thead>
 										<tr>
@@ -49,6 +50,7 @@
 										</td>
 									</tr>
 								</table>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -62,6 +64,7 @@
 					<div class="block">
 						<h5><i class="fa fa-cog"></i> {ADMIN_CONFIG_COL_CAPTION}:</h5>
 						<div class="wrapper">
+							<div class="table-responsive">
 							<table class="table table-striped">
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 								<tr>
@@ -77,6 +80,7 @@
 								</tr>
 <!-- END: ADMIN_CONFIG_ROW -->
 							</table>
+							</div>
 						</div>
 					</div>
 				</div>
