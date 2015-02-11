@@ -8,7 +8,7 @@
 					<h5><i class="fa fa-puzzle-piece"></i> {PHP.L.Extcontrol}</h5>
 					<div class="wrapper">
 						<div class="btn-group item-control">
-							<a class="btn btn-{PHP.R.admin-config-buttonsize1} <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} AND !{ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->btn-success special<!-- ELSE --> btn-primary<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="fa fa-font"></i> <span>{PHP.L.adm_sort_alphabet}</span></a>
+							<a class="btn btn-{PHP.R.admin-config-buttonsize1} <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->btn-success special<!-- ELSE --> btn-primary<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}"><i class="fa fa-font"></i> <span>{PHP.L.adm_sort_alphabet}</span></a>
 							<a class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1} <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->btn-success special<!-- ELSE --> btn-primary<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}"><i class="fa fa-sitemap"></i> <span>{PHP.L.adm_sort_category}</span></a>
 							<a class="btn btn-{PHP.R.admin-config-buttonsize1} <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->btn-success special" href="{ADMIN_EXTENSIONS_ALL_EXTENSIONS_URL}"<!-- ELSE -->btn-primary" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->><i class="fa fa-check-square-o"></i> <span>{PHP.L.adm_only_installed}</span></a>
 							<a class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}" href="{ADMIN_EXTENSIONS_HOOKS_URL}"><i class="fa fa-code"></i> <span>{PHP.L.Hooks}</span></a>
