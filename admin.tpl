@@ -16,8 +16,8 @@
 							</a>
 						</li>
 						<li>
-<!-- IF {PHP.cot_plugins_active.usermanager} -->
-							<a href="{PHP|cot_url('admin','m=other&p=usermanager&a=profile')}" class="btn btn-default btn-xs">
+<!-- IF {PHP.R.Usermanager} -->
+							<a href="{PHP.R.Usermanager|cot_url('admin','m=other&a=profile&p=$this')}" class="btn btn-default btn-xs">
 <!-- ELSE -->
 							<a href="{PHP|cot_url('users','m=profile')}" class="btn btn-default btn-xs">
 <!-- ENDIF -->
@@ -38,25 +38,16 @@
 					<i class="fa fa-user fa-3x fa-border pull-left"></i>
 					<ul class="list-unstyled">
 						<li>
-<!-- IF {PHP.cot_plugins_active.usermanager} -->
-							<a class="btn btn-default btn-xs" href="{PHP|cot_url('admin','m=other&p=usermanager&a=profile')}">
+<!-- IF {PHP.R.Usermanager} -->
+							<a class="btn btn-default btn-xs" href="{PHP.R.Usermanager|cot_url('admin','m=other&a=profile&p=$this')}">
 <!-- ELSE -->
 							<a class="btn btn-default btn-xs" href="{PHP|cot_url('users','m=profile')}">
 <!-- ENDIF -->
 								<i class="fa fa-user"></i> {PHP.L.Profile}
 							</a>
 						</li>
-						<li>
-<!-- IF {PHP.cot_plugins_active.usermanager} -->
-							<a class="btn btn-default btn-xs" href="{PHP.usr.id|cot_url('admin','m=other&p=usermanager&a=details&id=$this')}">
-<!-- ELSE -->
-							<a class="btn btn-default btn-xs" href="{PHP|cot_url('users','m=details')}">
-<!-- ENDIF -->
-								<i class="fa fa-floppy-o"></i> {PHP.L.Page}
-							</a>
-						</li>
 <!-- IF {PHP.cot_modules.pm} -->
-						<li><a class="btn btn-default btn-xs" href="{PHP|cot_url('pm','')}"><i class="fa fa-comment"></i> {PHP.L.Private_Messages}</a></li>
+						<li><a class="btn btn-default btn-xs" href="{PHP|cot_url('pm')}"><i class="fa fa-comment"></i> {PHP.L.Private_Messages}</a></li>
 <!-- ENDIF -->
 						<li class="loginout">{PHP.out.loginout}</li>
 					</ul>
@@ -124,8 +115,8 @@
 						</div>
 						<div id="users" class="panel-collapse collapse">
 							<ul class="accordion-inner">
-<!-- IF {PHP.cot_plugins_active.usermanager} -->
-								<li><i class="fa fa-group"></i><a href="{PHP|cot_url('admin','m=other&p=usermanager')}">{PHP.L.Usermanager}</a></li>
+<!-- IF {PHP.R.Usermanager} -->
+								<li><i class="fa fa-group"></i><a href="{PHP.R.Usermanager|cot_url('admin','m=other&p=$this')}">{PHP.L.Usermanager}</a></li>
 <!-- ENDIF -->
 								<li><i class="fa fa-cog"></i><a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.home_ql_b3_1}</a></li>
 								<li><i class="fa fa-bars"></i><a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a></li>
