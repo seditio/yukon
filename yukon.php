@@ -10,6 +10,7 @@ $R['link_pagenav_prev'] = '<li class="previous"><a href="{$url}"{$event}{$rel}>'
 $R['link_pagenav_next'] = '<li class="next"><a href="{$url}"{$event}{$rel}>'.$L['pagenav_next'].'</a></li>';
 $R['link_pagenav_first'] = '<li class=""><a href="{$url}"{$event}{$rel}>'.$L['pagenav_first'].'</a></li>';
 $R['link_pagenav_last'] = '<li class=""><a href="{$url}"{$event}{$rel}>'.$L['pagenav_last'].'</a></li>';
+$R['link_pagenav_gap'] = '<li class="gap"><span>...</span></li>';
 
 $R['input_text_metatitle'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="255" class="input-block-level">{$value}</textarea>';
 $R['input_text_metadesc'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="255" class="input-block-level">{$value}</textarea>';
