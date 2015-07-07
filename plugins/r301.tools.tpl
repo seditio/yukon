@@ -50,7 +50,7 @@
 						<h5>{PHP.L.New}</h5>
 						<div class="wrapper">
 							<form action="{ADMIN_R301_ADD_URL}" method="post" name="pageform">
-								<table class="table table-bordered">
+								<table class="table table-bordered m0">
 									<tr>
 										<td>{PHP.L.301_from}</td>
 										<td>{ADMIN_R301_FROM}</td>
@@ -70,11 +70,11 @@
 									<tr>
 										<td colspan="2" class="valid">
 											<button type="submit" name="rpaste" value="ok" class="btn btn-primary">{PHP.L.Add}</button>
+											<a class="btn btn-primary" href="{ADMIN_R301_ID2AL_URL}">{PHP.L.301_id2al}</a>
 										</td>
 									</tr>
-								</table>	
+								</table>
 							</form>
-							<p><a class="btn btn-primary" href="{ADMIN_R301_ID2AL_URL}">{PHP.L.301_id2al}</a></p>
 						</div>
 					</div>
 				</div>
