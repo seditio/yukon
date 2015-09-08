@@ -103,7 +103,7 @@
 										<div class="adminconfigmore">{ADMIN_CONFIG_ROW_CONFIG_MORE}</div>
 									</td>
 									<td class="centerall">
-										<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="ajax btn btn-small">
+										<a href="{ADMIN_CONFIG_ROW_CONFIG_MORE_URL}" class="btn btn-small">
 											<i class="fa fa-refresh"></i> {PHP.L.Reset}
 										</a>
 									</td>
