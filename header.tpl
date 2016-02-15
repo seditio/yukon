@@ -3,7 +3,10 @@
 <html>
 <head>
 
-	<meta http-equiv="content-type" content="{HEADER_META_CONTENTTYPE}; charset=UTF-8" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	
 	<title>{HEADER_TITLE}</title>
 	<meta name="description" content="{HEADER_META_DESCRIPTION}" />
 	<meta name="keywords" content="{HEADER_META_KEYWORDS}" />
