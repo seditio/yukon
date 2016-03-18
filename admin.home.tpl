@@ -19,6 +19,10 @@
 			</div>
 <!-- ENDIF -->
 
+<!-- IF {PHP|file_exists('themes/admin/yukon/inc/home.tpl')} -->
+{FILE "themes/admin/yukon/inc/home.tpl"}
+<!-- ENDIF -->
+
 			<div class="row-fluid">
 				<div class="col-md-8">
 <!-- BEGIN: MAINPANEL -->
@@ -32,6 +36,10 @@
 					<div class="block">
 						<h5><i class="fa fa-comments"></i> {PHP.R.Toprecent} {PHP.L.Toprecentpages} {PHP.L.Within} {PHP.R.Toprecent|cot_declension($this, 'Days')}</h5>
 {PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
+					</div>
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> {PHP.L.Recent}</h5>
+{PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_date DESC','','','','','TRUE','','TRUE')}
 					</div>
 <!-- ENDIF -->
 				</div>

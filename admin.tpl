@@ -46,6 +46,15 @@
 								<i class="fa fa-user"></i> {PHP.L.Profile}
 							</a>
 						</li>
+						<li>
+<!-- IF {PHP.R.Usermanager} -->
+							<a class="btn btn-default btn-xs" href="{PHP.R.Usermanager|cot_url('admin','m=other&a=details&p=$this')}">
+<!-- ELSE -->
+							<a class="btn btn-default btn-xs" href="{PHP|cot_url('users','m=details')}">
+<!-- ENDIF -->
+								<i class="fa fa-floppy-o"></i> {PHP.L.Page}
+							</a>
+						</li>
 <!-- IF {PHP.cot_modules.pm} -->
 						<li><a class="btn btn-default btn-xs" href="{PHP|cot_url('pm')}"><i class="fa fa-comment"></i> {PHP.L.Private_Messages}</a></li>
 <!-- ENDIF -->
@@ -103,6 +112,9 @@
 								<li><i class="fa fa-ban"></i><a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a></li>
 								<li><i class="fa fa-plus"></i><a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a></li>
 								<li><i class="fa fa-bars"></i><a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a></li>
+<!-- IF {PHP.cot_plugins_active.portal_stats} -->
+								<li><i class="fa fa-cogs"></i><a href="{PHP|cot_url('admin','m=other&p=portal_stats')}">Статистика портала</a></li>
+<!-- ENDIF -->
 							</ul>
 						</div>
 					</div>
