@@ -129,6 +129,8 @@ h6				{ font-family:'Open Sans', sans-serif; font-size:13px; margin:0 0 10px; }
 /* 99. Misc
 -------------------------------------------------- */
 
+div.btn-group > a	{ font-size:13px; }
+
 .lower				{ text-transform:lowercase; }
 .upper				{ text-transform:uppercase; }
 

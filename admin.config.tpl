@@ -46,7 +46,12 @@
 <!-- END: ADMIN_CONFIG_ROW -->
 									<tr>
 										<td class="group_end" colspan="3">
-											<button type="submit" class="btn btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
+											<div class="btn-group">
+												<button type="submit" class="btn btn-md btn-primary btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-refresh"></i> {PHP.L.Update}</button>
+<!-- IF {PHP.o} == plug -->
+												<a href="{PHP.p|cot_url('admin','m=extensions&a=details&pl=$this')}" class="btn btn-md btn-success btn-{PHP.R.admin-config-buttonsize1}"><i class="fa fa-reply"></i> {PHP.L.Back}</a>
+<!-- ENDIF -->
+											</div>
 										</td>
 									</tr>
 								</table>
