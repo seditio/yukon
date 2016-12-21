@@ -21,7 +21,7 @@
 									<tbody>
 <!-- BEGIN: R301_ROW -->
 										<tr>
-											<td class="text-center">{ADMIN_R301_ITEM_ID}.</td>
+											<td class="centerall">{ADMIN_R301_ITEM_ID}.</td>
 											<td>{ADMIN_R301_FROM}</td>
 											<td>{ADMIN_R301_TO}</td>
 											<td class="centerall">{ADMIN_R301_TYPE}</td>
