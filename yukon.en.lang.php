@@ -50,4 +50,5 @@ $L['Topbestpages'] = 'best pages ever';
 $L['Toprecentpages'] = 'best new pages';
 $L['Within'] = 'within last';
 
-$L['Newcomments'] = 'New comments';
+$L['yukon-newpages'] = 'Recent Pages';
+$L['yukon-newcomments'] = 'New comments';

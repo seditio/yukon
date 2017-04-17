@@ -38,7 +38,7 @@
 {PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
 					</div>
 					<div class="block">
-						<h5><i class="fa fa-comments"></i> {PHP.L.Recent}</h5>
+						<h5><i class="fa fa-comments"></i> {PHP.L.yukon-newpages}</h5>
 {PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_date DESC','','','','','TRUE','','TRUE')}
 					</div>
 <!-- ENDIF -->

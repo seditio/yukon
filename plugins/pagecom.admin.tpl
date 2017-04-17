@@ -1,6 +1,6 @@
 <!-- BEGIN: MAIN -->
 					<div class="block">
-						<h5><i class="fa fa-comments"></i> {PHP.L.Newcomments}</h5>
+						<h5><i class="fa fa-comments"></i> {PHP.L.yukon-newcomments}</h5>
 						<div class="wrapper">
 							<table class="table table-striped">
 <!-- BEGIN: PAGECOM_ROW -->

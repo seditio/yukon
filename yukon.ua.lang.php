@@ -50,4 +50,5 @@ $L['Topbestpages'] = 'кращих сторінок за весь час';
 $L['Toprecentpages'] = 'кращих нових сторінок';
 $L['Within'] = 'за останні';
 
-$L['Newcomments'] = 'Нові коментарі';
+$L['yukon-newpages'] = 'Нові сторінки';
+$L['yukon-newcomments'] = 'Нові коментарі';
