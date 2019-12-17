@@ -2,7 +2,7 @@
 
 <!-- BEGIN: STAT -->
 	<div class="block">
-		<h5><i class="fa fa-bar-chart-o"></i> {PHP.L.hits_hits}</h5>
+		<h5><i class="fa fa-bar-chart-o"></i> {HITS_STAT_HEADER}</h5>
 		<div class="wrapper">
 			<table class="table table-striped">
 <!-- BEGIN: ADMIN_HOME_ROW -->

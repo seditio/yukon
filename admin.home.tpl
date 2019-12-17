@@ -23,23 +23,57 @@
 {FILE "themes/admin/yukon/inc/home.tpl"}
 <!-- ENDIF -->
 
+<!-- IF {PHP.cot_plugins_active.getip} -->
+			<div class="row-fluid clearfix">
+				<div class="col-md-4">
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> [SEDBY] GetIP: Last 10 Good Visits from Minsk</h5>
+						<div class="wrapper">
+{PHP|getip_list('getip.list.visits', 'getip_city = "Минск" and getip_class != "admin"', '10')}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> [SEDBY] GetIP: Last 10 Visits from Bots</h5>
+						<div class="wrapper">
+{PHP|getip_list('getip.list.bots', 'getip_class = "bot"', '10')}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="block">
+						<h5><i class="fa fa-comments"></i> [SEDBY] GetIP: Last 10 Bad Visits</h5>
+						<div class="wrapper">
+{PHP|getip_list('getip.list.visits', 'getip_city != "Минск" and getip_class != "bot"', '10')}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="col-md-12">
+					<a href="{PHP|cot_url('admin','m=other&p=getip')}" class="btn btn-block btn-primary mb20">[SEDBY] Getip Admin</a>
+				</div>
+			</div>
+<!-- ENDIF -->
+
 			<div class="row-fluid">
 				<div class="col-md-8">
 <!-- BEGIN: MAINPANEL -->
 					{ADMIN_HOME_MAINPANEL}
 <!-- END: MAINPANEL -->
-<!-- IF {PHP.cot_plugins_active.pagelist} -->
+<!-- IF {PHP.cot_plugins_active.cot_pagelist} -->
 					<div class="block">
 						<h5><i class="fa fa-comments"></i> {PHP.R.Topbest} {PHP.L.Topbestpages}</h5>
-{PHP.R.Topbest|pagelist('pagelist.admin',$this,'page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
+{PHP.R.Topbest|cot_pagelist('pagelist.admin',$this,'page_count DESC','page_count > 0','','','','TRUE','','TRUE')}
 					</div>
 					<div class="block">
 						<h5><i class="fa fa-comments"></i> {PHP.R.Toprecent} {PHP.L.Toprecentpages} {PHP.L.Within} {PHP.R.Toprecent|cot_declension($this, 'Days')}</h5>
-{PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
+{PHP.R.Toprecent|cot_pagelist('pagelist.admin',$this,'page_count DESC','page_date > (UNIX_TIMESTAMP() - 864000)','','','','TRUE','','TRUE')}
 					</div>
 					<div class="block">
 						<h5><i class="fa fa-comments"></i> {PHP.L.yukon-newpages}</h5>
-{PHP.R.Toprecent|pagelist('pagelist.admin',$this,'page_date DESC','','','','','TRUE','','TRUE')}
+{PHP.R.Toprecent|cot_pagelist('pagelist.admin',$this,'page_date DESC','','','','','TRUE','','TRUE')}
 					</div>
 <!-- ENDIF -->
 				</div>

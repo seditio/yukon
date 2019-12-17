@@ -1,5 +1,7 @@
 $().ready(function() {
 
+	$('input[type=text]').addClass('form-control');
+
 	$('#removecookies a').click(function()
 	{
 		$.removeCookie('hidesidebar', {path: '/'});  // Hide sidebar
