@@ -1,0 +1,20 @@
+// Removed height and width here
+* iframe.jqm  { position: absolute; top: 0; left: 0; z-index: -1; }
+
+// Removed top here
+* html .jqmWindow { position: absolute; }
+
+.jqmWindow  { color: #333; text-align: center; padding: 15px 20px; background-color: #dfdfdf; border: 1px solid #fff; border-radius: 2px; overflow: auto; display: none; position: fixed; top: 50%; left: 50%; box-shadow: 0 0 10px rgba(255, 255, 255, .5); }
+
+.jqmOverlay { background-color: #000; }
+
+div.msgbox                  { padding: 5px 0 0; }
+div.msgbox > div            { width: 50%; float: left; }
+div.msgbox a.confirmButton  { font-weight: 700; text-transform: uppercase; width: 50px; display: block; }
+
+div#standby                 { height: 100vh; position: relative; }
+  div#standby > div         { width: 500px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+  div#standby > div h1                { margin: 0 0 8px; }
+  div#standby > div div.alert         { margin: 0; }
+  div#standby > div p                 { font-size: 16px; }
+  div#standby > div a.confirmButton   { font-size: 14px; }
