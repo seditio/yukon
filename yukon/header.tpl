@@ -105,7 +105,7 @@
 				<a href="{PHP|cot_url('admin')}" id="logo" class="d-block text-center text-uppercase">
 					{PHP.R.icon-dashboard}{PHP.L.Adminpanel}
 				</a>
-				<div id="profile" class="block overflow-hidden mb-1">
+				<div id="profile" class="block mt-0 overflow-hidden">
 					<p class="mb-1">
 						{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
 					</p>
@@ -138,6 +138,7 @@
 					</ul>
 				</div>
 
+<!-- IF {PHP.usr.admin_config} -->
 				<div id="menu" class="accordion accordion-flush">
 					<div class="accordion-item menu_entry">
 						<div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="menu1">{PHP.L.Navigation}</div>
@@ -160,7 +161,7 @@
 										{PHP.R.icon-user}<a href="{PHP|cot_url('admin', 'm=users')}">{PHP.L.Users}</a>
 									</li>
 									<li>
-										{PHP.R.icon-wrench}<a href="{PHP|cot_url('admin', 'm=other')}">{PHP.L.Other}</a>
+										{PHP.R.icon-wrench}<a href="{PHP|cot_url('admin', 'm=other')}">{PHP.L.Management}</a>
 									</li>
 								</ul>
 							</div>
@@ -235,6 +236,7 @@
 						</div>
 					</div>
 				</div>
+<!-- ENDIF -->
 
 <!-- IF {PHP.cot_plugins_active.adminstats} -->
 				<div class="miniwidget block">

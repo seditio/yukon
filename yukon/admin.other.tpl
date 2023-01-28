@@ -6,6 +6,7 @@
 						<div class="wrapper">
 							<div class="{PHP.R.admin-table-responsive-container-class}">
 								<table class="{PHP.R.admin-table-class}">
+<!-- IF {PHP.usr.admin_config} -->
 									<tr>
 										<td class="d-flex">
 											<figure class="mt-1 mx-2 mb-0">
@@ -51,6 +52,7 @@
 											</div>
 										</td>
 									</tr>
+<!-- ENDIF -->
 									<tr>
 										<td class="d-flex">
 											<figure class="mt-1 mx-2 mb-0">

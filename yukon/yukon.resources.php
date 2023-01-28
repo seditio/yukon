@@ -21,8 +21,8 @@ $R['admin_code_running'] = '<span class="extension running text-success fw-semib
 $R['admin_exflds_array'] = '{$tplfile}: {$tags}; ';
 
 // Breadcrumbs
-$R['breadcrumbs_container'] = '{$crumbs}';
-$R['breadcrumbs_first'] = '<ol class="breadcrumb">';
+$R['breadcrumbs_container'] = '<ol class="breadcrumb">{$crumbs}</ol>';
+$R['breadcrumbs_first'] = '<li class="breadcrumb-item">{$crumb}</li>';
 $R['breadcrumbs_crumb'] = '<li class="breadcrumb-item">{$crumb}</li>';
 $R['breadcrumbs_link'] = '<a href="{$url}" title="{$title}">{$title}</a>';
 $R['breadcrumbs_plain'] = '{$title}';

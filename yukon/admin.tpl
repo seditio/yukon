@@ -2,7 +2,7 @@
 			<div id="content" class="position-relative overflow-hidden">
 
 				<div id="breadcrumbs" class="text-truncate text-uppercase px-3 px-md-4">
-					{PHP.adminpath|cot_breadcrumbs($this, true)}
+					{ADMIN_BREADCRUMBS}
 				</div>
 
 				<nav id="navigation" class="mb-3 px-3 px-md-4" data-title="{PHP.L.admin-nav-action}">
@@ -48,7 +48,7 @@
 <!-- ENDIF -->
 						<div class="col-md-2">
 							<a href="{PHP|cot_url('admin', 'm=other')}" id="nv-other" class="nv<!-- IF {PHP.m} == 'other' --> sel<!-- ENDIF -->">
-								<span>{PHP.L.Other}</span>
+								<span>{PHP.L.Management}</span>
 								{PHP.R.icon-wrench}
 							</a>
 						</div>
