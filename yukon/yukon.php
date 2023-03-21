@@ -2,7 +2,7 @@
 /* ====================
 [BEGIN_COT_THEME]
 Name=Yukon
-Version=2.00b
+Version=2.10b
 Schemes=default:Default
 [END_COT_THEME]
 ==================== */
@@ -20,7 +20,7 @@ require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
 $R['theme-revision'] = 252;
 
-//	Template Settings
+// Template Settings
 $R['admin-pagination-nav-class'] = 'mt-3';																					// Navigation parent class
 $R['admin-pagination-list-class'] = 'pagination-sm justify-content-xl-center m-0';	// Navigation list class
 $R['admin-pagination-p-class'] = 'text-center mt-3 mb-0';														// Navigation info paragraph class
