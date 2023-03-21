@@ -15,12 +15,12 @@
 						</tr>
 						<tr>
 							<td>
-								<button type="submit" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-upload}{PHP.L.Upload}</button>
+								{CSV_IMP_UPD}
 							</td>
 						</tr>
 						<tr>
 							<td>
-								{CSV_IMP_UPD}
+								<button type="submit" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-upload}{PHP.L.Upload}</button>
 							</td>
 						</tr>
 						<tr>

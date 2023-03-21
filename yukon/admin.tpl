@@ -63,8 +63,10 @@
 <!-- IF {ADMIN_HELP} -->
 					<div class="px-3 px-md-4">
 						<div class="alert alert-info">
-							<h4>{PHP.L.Help}:</h4>
-							<div>{ADMIN_HELP}</div>
+							<h4 class="mb-2">{PHP.L.Help}:</h4>
+							<div class="lh-sm">
+								{ADMIN_HELP}
+							</div>
 						</div>
 					</div>
 <!-- ENDIF -->

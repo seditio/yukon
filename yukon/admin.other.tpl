@@ -83,6 +83,21 @@
 											</div>
 										</td>
 									</tr>
+									<tr>
+										<td class="d-flex">
+											<figure class="mt-1 mx-2 mb-0">
+												{PHP.R.icon_cfg_phpinfo}
+											</figure>
+											<div>
+												<a href="{ADMIN_OTHER_URL_PHPINFO}" class="d-block fw-bold">
+													{PHP.L.adm_phpinfo}
+												</a>
+												<p class="lh-sm mb-0">
+													{PHP.L.adm_phpinfo_desc}
+												</p>
+											</div>
+										</td>
+									</tr>
 								</table>
 							</div>
 						</div>

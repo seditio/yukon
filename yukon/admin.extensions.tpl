@@ -5,16 +5,22 @@
 
 <!-- BEGIN: DEFAULT -->
 				<div class="block">
-					<h2>{PHP.R.icon-gear}{PHP.L.Configuration}</h2>
+					<h2>{PHP.R.icon-gear}{PHP.L.Sorting}</h2>
 					<div class="wrapper">
-
 						<div class="btn-group">
-							<a class="btn {PHP.R.admin-top-button-size-class} <!-- IF {ADMIN_EXTENSIONS_SORT_ALP_SEL} -->{PHP.R.admin-button-success-class}<!-- ELSE --> {PHP.R.admin-button-primary-class}<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}">{PHP.R.icon-font}<span>{PHP.L.adm_sort_alphabet}</span></a>
-							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class} <!-- IF {ADMIN_EXTENSIONS_SORT_CAT_SEL} -->{PHP.R.admin-button-success-class}<!-- ELSE --> {PHP.R.admin-button-primary-class}<!-- ENDIF -->" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}">{PHP.R.icon-sitemap}<span>{PHP.L.adm_sort_category}</span></a>
-							<a class="btn {PHP.R.admin-top-button-size-class} <!-- IF {ADMIN_EXTENSIONS_ONLY_INSTALLED_SEL} -->{PHP.R.admin-button-success-class}" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ELSE -->{PHP.R.admin-button-primary-class}" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}"<!-- ENDIF -->>{PHP.R.icon-check-square}<span>{PHP.L.adm_only_installed}</span></a>
-							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}" href="{ADMIN_EXTENSIONS_HOOKS_URL}">{PHP.R.icon-code}<span>{PHP.L.Hooks}</span></a>
+							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}" href="{ADMIN_EXTENSIONS_SORT_ALP_URL}">
+								{PHP.R.icon-font}<span>{PHP.L.adm_sort_alphabet}</span>
+							</a>
+							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}" href="{ADMIN_EXTENSIONS_SORT_CAT_URL}">
+								{PHP.R.icon-sitemap}<span>{PHP.L.adm_sort_category}</span>
+							</a>
+							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}" href="{ADMIN_EXTENSIONS_ONLY_INSTALLED_URL}">
+								{PHP.R.icon-check-square}<span>{PHP.L.adm_only_installed}</span>
+							</a>
+							<a class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}" href="{ADMIN_EXTENSIONS_HOOKS_URL}">
+								{PHP.R.icon-code}<span>{PHP.L.Hooks}</span>
+							</a>
 						</div>
-
 					</div>
 				</div>
 

@@ -51,8 +51,7 @@
 								<tr>
 									<td>{PHP.L.adm_tpl_mode}:</td>
 									<td>
-										{ADMIN_STRUCTURE_TPLMODE} {ADMIN_STRUCTURE_SELECT}<br />
-										{PHP.L.adm_tpl_quickcat}: {ADMIN_STRUCTURE_TPLQUICK}
+										{ADMIN_STRUCTURE_TPL}
 									</td>
 								</tr>
 <!-- BEGIN: EXTRAFLD -->
@@ -126,13 +125,13 @@
 								<td>{ADMIN_STRUCTURE_PATH}</td>
 								<td>{ADMIN_STRUCTURE_CODE}</td>
 								<td>{ADMIN_STRUCTURE_TITLE}</td>
-								<td>{ADMIN_STRUCTURE_TPLQUICK}</td>
+								<td>{ADMIN_STRUCTURE_TPL_CODE}</td>
 								<td>{ADMIN_STRUCTURE_COUNT}</td>
 								<td class="action">
 									<div class="btn-group">
 										<a href="{ADMIN_STRUCTURE_OPTIONS_URL}" title="{PHP.L.Config}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-gear}<span>{PHP.L.short_config}</span></a>
 <!-- IF {ADMIN_STRUCTURE_RIGHTS_URL} -->
-										<a title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}</i><span>{PHP.L.short_rights}</span></a>
+										<a title="{PHP.L.Rights}" href="{ADMIN_STRUCTURE_RIGHTS_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}<span>{PHP.L.short_rights}</span></a>
 <!-- ENDIF -->
 <!-- IF {ADMIN_STRUCTURE_CAN_DELETE} -->
 										<a title="{PHP.L.Delete}" href="{ADMIN_STRUCTURE_UPDATE_DEL_URL}" class="confirmLink btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-trash}<span>{PHP.L.short_delete}</span></a>
@@ -221,8 +220,8 @@
 								</tr>
 							</tbody>
 						</table>
-					</form>
-				</div>
+					</div>
+				</form>
 			</div>
 		</div>
 <!-- END: NEWCAT -->

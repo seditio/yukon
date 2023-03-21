@@ -70,8 +70,13 @@
 							</a>
 						</li>
 						<li class="d-none d-sm-block">
-							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=4')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #3">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=4')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #4">
 								{PHP.R.icon-desktop}<span>4</span>
+							</a>
+						</li>
+						<li class="d-none d-sm-block">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=sa')}" class="btn btn-xs" title="{PHP.L.adt_desktop} SA">
+								{PHP.R.icon-desktop}<span>SA</span>
 							</a>
 						</li>
 					</ul>
@@ -109,9 +114,13 @@
 					<p class="mb-1">
 						{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
 					</p>
-					<div class="user-icon mb-2">
-						{PHP.R.icon-user}
-					</div>
+					<figure class="mb-2">
+<!-- IF {PHP.user_avatar} -->
+						<img src="{PHP.user_avatar}" alt="" class="img-fluid" />
+<!-- ELSE -->
+						<img src="/datas/defaultav/default.png" alt="" class="img-fluid" />
+<!-- ENDIF -->
+					</figure>
 					<ul class="list-unstyled m-0">
 						<li>
 							<a class="btn btn-xs" href="{PHP|cot_url('users','m=profile')}">
@@ -138,10 +147,9 @@
 					</ul>
 				</div>
 
-<!-- IF {PHP.usr.admin_config} -->
 				<div id="menu" class="accordion accordion-flush">
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="menu1">{PHP.L.Navigation}</div>
+						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="menu1">{PHP.L.Navigation}</div>
 						<div id="menu1" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -168,7 +176,7 @@
 						</div>
 					</div>
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_ql_b1_title}</div>
+						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_ql_b1_title}</div>
 						<div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -192,7 +200,7 @@
 						</div>
 					</div>
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="menu3">{PHP.L.Pages}</div>
+						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="menu3">{PHP.L.Pages}</div>
 						<div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -208,9 +216,14 @@
 									<li>
 										{PHP.R.icon-plus}<a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a>
 									</li>
+<!-- IF {PHP.cot_plugins_active.csv} -->
+									<li>
+										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv')}">CSV Import / Export</a>
+									</li>
+<!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.csv_import} -->
 									<li>
-										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv_import')}">CSV Import</a>
+										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv_import')}">CSV Import (deprecated)</a>
 									</li>
 <!-- ENDIF -->
 								</ul>
@@ -218,7 +231,7 @@
 						</div>
 					</div>
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="menu4">{PHP.L.Users}</div>
+						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="menu4">{PHP.L.Users}</div>
 						<div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -236,7 +249,6 @@
 						</div>
 					</div>
 				</div>
-<!-- ENDIF -->
 
 <!-- IF {PHP.cot_plugins_active.adminstats} -->
 				<div class="miniwidget block">
@@ -285,7 +297,7 @@
 <!-- ENDIF -->
 				<div class="miniwidget block">
 					<ul class="list-unstyled m-0">
-						<li>Powered by <a href="https://www.cotonti.com">Cotonti Siena v. {PHP.cfg.version}</a></li>
+						<li>Powered by <a href="https://www.cotonti.com">Cotonti Siena {PHP.cfg.version}</a></li>
 						<li>Theme developed by <a href="https://www.seditio.by">Seditio.by</a></li>
 					</ul>
 				</div>

@@ -132,10 +132,13 @@ $().ready(function() {
 		$.cookie('panelselection', $(this).attr('data-bs-target'), { expires: 365, path: '/;SameSite=Lax', secure: true });
 	});
 
+	$('div#content div.wrapper table input[type=file]').addClass('form-control');
 	$('div#content div.wrapper table input[type=text]').addClass('form-control');
 	$('div#content div.wrapper table textarea').addClass('form-control');
 	$('table input[type=checkbox]').css('display','inline-block');
 	$('div.input-group > select, select#selectmenu').addClass('form-select');
 	$('div.input-group input[type=checkbox]').addClass('form-check-input');
 
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
