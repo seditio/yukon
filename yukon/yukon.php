@@ -2,7 +2,7 @@
 /* ====================
 [BEGIN_COT_THEME]
 Name=Yukon
-Version=2.10b
+Version=2.11b
 Schemes=default:Default
 [END_COT_THEME]
 ==================== */

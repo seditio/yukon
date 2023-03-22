@@ -221,11 +221,6 @@
 										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv')}">CSV Import / Export</a>
 									</li>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_plugins_active.csv_import} -->
-									<li>
-										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv_import')}">CSV Import (deprecated)</a>
-									</li>
-<!-- ENDIF -->
 								</ul>
 							</div>
 						</div>
