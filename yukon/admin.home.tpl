@@ -22,6 +22,9 @@
 			<div class="row">
 
 				<div class="col-lg-12 col-xxl-4">
+<!-- IF {PHP.cot_plugins_active.comlist} AND {PHP.cot_plugins_active.comments} -->
+{PHP|cot_comlist('comlist.admin','5','0','date','','','0')}
+<!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.adminboard} -->
 					<div class="block">
 						<h2>{PHP.R.icon-comment}Admin Board / {PHP.sys.now|cot_date('j F', $this)}</h2>
