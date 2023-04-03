@@ -46,11 +46,11 @@
 								<td>{ADMIN_USERS_ROW_GRP_DISABLED}</td>
 								<td class="action">
 									<div class="btn-group">
-										<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-gear}<span>{PHP.L.short_config}</span></a>
+										<a title="{PHP.L.Configuration}" href="{ADMIN_USERS_ROW_GRP_TITLE_URL}" class="ajax btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-gear}<span>{PHP.L.Config}</span></a>
 <!-- IF !{ADMIN_USERS_ROW_GRP_SKIPRIGHTS} -->
-										<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}<span>{PHP.L.short_rights}</span></a>
+										<a title="{PHP.L.Rights}" href="{ADMIN_USERS_ROW_GRP_RIGHTS_URL}" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}<span>{PHP.L.Rights}</span></a>
 <!-- ENDIF -->
-										<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.short_open}</span></a>
+										<a title="{PHP.L.Open}" href="{ADMIN_USERS_ROW_GRP_JUMPTO_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.Open}</span></a>
 									</div>
 								</td>
 							</tr>

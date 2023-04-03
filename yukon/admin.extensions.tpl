@@ -83,16 +83,16 @@
 										<td class="action">
 											<div class="btn-group">
 <!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} -->
-												<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-gear}<span>{PHP.L.short_config}</span></a>
+												<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_EDIT_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-gear}<span>{PHP.L.Config}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifstruct} -->
-												<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-sitemap}<span>{PHP.L.short_struct}</span></a>
+												<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-sitemap}<span>{PHP.L.Structure}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.totalinstalled} -->
-												<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}<span>{PHP.L.short_rights}</span></a>
+												<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-lock}<span>{PHP.L.Rights}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.ifthistools} -->
-												<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-user}<span>{PHP.L.short_admin}</span></a>
+												<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-user}<span>{PHP.L.Admin}</span></a>
 <!-- ENDIF -->
 <!-- IF {PHP.if_plg_standalone} -->
 												<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.Open}</span></a>
@@ -132,7 +132,7 @@
 <!-- IF {ADMIN_EXTENSIONS_TOTALCONFIG} > 0 -->
 								<a title="{PHP.L.Configuration}" href="{ADMIN_EXTENSIONS_CONFIG_URL}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}">{PHP.R.icon-gear}{PHP.L.Configuration} ({ADMIN_EXTENSIONS_TOTALCONFIG})</a>
 <!-- ENDIF -->
-								<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-top-button-size-class}">{PHP.R.icon-lock}{PHP.L.short_rights}</a>
+								<a title="{PHP.L.Rights}" href="{ADMIN_EXTENSIONS_RIGHTS}" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-top-button-size-class}">{PHP.R.icon-lock}{PHP.L.Rights}</a>
 <!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT} -->
 								<a title="{PHP.L.Structure}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_STRUCT}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}">{PHP.R.icon-sitemap}{PHP.L.Structure}</a>
 <!-- ENDIF -->

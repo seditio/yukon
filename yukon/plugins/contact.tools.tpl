@@ -32,7 +32,7 @@
 								</td>
 								<td class="action">
 									<div class="btn-group">
-										<a href="{CONTACT_VIEWLINK}" title="{PHP.L.View}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.short_open}</span></a>
+										<a href="{CONTACT_VIEWLINK}" title="{PHP.L.View}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.Open}</span></a>
 <!-- IF {CONTACT_VAL} == val -->
 										<a href="{CONTACT_READLINK}" title="{PHP.L.contact_markread}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-arrow-down}<span>{PHP.L.contact_read}</span></a>
 <!-- ELSE -->
