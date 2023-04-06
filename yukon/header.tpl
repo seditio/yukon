@@ -176,18 +176,18 @@
 						</div>
 					</div>
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_ql_b1_title}</div>
+						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_site_props}</div>
 						<div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
 									<li>
-										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.home_ql_b1_1}</a>
+										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.admin-system-config}</a>
 									</li>
 									<li>
-										{PHP.R.icon-code}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.home_ql_b1_2}</a>
+										{PHP.R.icon-code}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.core_title}</a>
 									</li>
 									<li>
-										{PHP.R.icon-palette}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.home_ql_b1_3}</a>
+										{PHP.R.icon-palette}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.core_theme}</a>
 									</li>
 									<li>
 										{PHP.R.icon-globe}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a>
@@ -208,7 +208,7 @@
 										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=page')}">{PHP.L.Configuration}</a>
 									</li>
 									<li>
-										{PHP.R.icon-bars}<a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_ql_b2_2}</a>
+										{PHP.R.icon-bars}<a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_pages}</a>
 									</li>
 									<li>
 										{PHP.R.icon-ban}<a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a>
@@ -231,13 +231,13 @@
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
 									<li>
-										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.home_ql_b3_1}</a>
+										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=users')}">{PHP.L.Configuration}</a>
 									</li>
 									<li>
-										{PHP.R.icon-bars}<a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_ql_b3_2}</a>
+										{PHP.R.icon-bars}<a href="{PHP.db_users|cot_url('admin','m=extrafields&amp;n=$this')}">{PHP.L.home_extrafields_users}</a>
 									</li>
 									<li>
-										{PHP.R.icon-lock}<a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_ql_b3_4}</a>
+										{PHP.R.icon-lock}<a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_users_rights}</a>
 									</li>
 								</ul>
 							</div>
