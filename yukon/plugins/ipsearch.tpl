@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="col-lg-6">
 		<div class="block">
-			<h2>{PHP.R.icon-magnifying-glass}{PHP.L.ipsearch_searchthisuser}:</h2>
+			<h2>{PHP.R.icon-search}{PHP.L.ipsearch_searchthisuser}:</h2>
 			<div class="wrapper">
 				<form id="search" action="{IPSEARCH_FORM_URL}" method="post" class="input-append">
 					<div class="btn-group">
