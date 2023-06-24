@@ -8,5 +8,5 @@ https://github.com/seditio/cot_icons
 https://github.com/seditio/cot_bootstrap
 
 Recommended:  
-https://github.com/seditio/analogue
+https://github.com/seditio/analogue  
 https://github.com/seditio/cot_comlist
