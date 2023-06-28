@@ -9,4 +9,5 @@ https://github.com/seditio/cot_bootstrap
 
 Recommended:  
 https://github.com/seditio/analogue  
-https://github.com/seditio/cot_comlist
+https://github.com/seditio/cot_comlist  
+https://github.com/seditio/cot_pagelist
