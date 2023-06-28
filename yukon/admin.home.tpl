@@ -4,7 +4,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="alert alert-danger">
-						<h4>{PHP.L.adminqv_update_notice}:</h4>
+						<h4>{PHP.L.home_update_notice}:</h4>
 						<p>{ADMIN_HOME_UPDATE_REVISION} {ADMIN_HOME_UPDATE_MESSAGE}</p>
 					</div>
 				</div>
