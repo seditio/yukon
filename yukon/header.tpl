@@ -267,26 +267,26 @@
 					</ul>
 				</div>
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.admin-activity-for} {PHP.R.Recent|cot_declension($this, Days)}:</span>
+					<span class="fw-bold d-block">{PHP.L.admin-activity-for} {PHP.R.admin-home-recent|cot_declension($this, Days)}:</span>
 					<ul class="list-unstyled m-0">
 <!-- IF {PHP.cot_modules.page} -->
-						<li>{PHP.L.home_newpages}: <span>{PHP.R.Recent|item_counter('pages', $this)}</span></li>
+						<li>{PHP.L.home_newpages}: <span>{PHP.R.admin-home-recent|item_counter('pages', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.comments} -->
-						<li>{PHP.L.admin-new-comments}: <span>{PHP.R.Recent|item_counter('comments', $this)}</span></li>
+						<li>{PHP.L.admin-new-comments}: <span>{PHP.R.admin-home-recent|item_counter('comments', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_modules.forums} -->
-						<li>{PHP.L.home_newtopics}: <span>{PHP.R.Recent|item_counter('topics', $this)}</span></li>
-						<li>{PHP.L.home_newposts}: <span>{PHP.R.Recent|item_counter('posts', $this)}</span></li>
+						<li>{PHP.L.home_newtopics}: <span>{PHP.R.admin-home-recent|item_counter('topics', $this)}</span></li>
+						<li>{PHP.L.home_newposts}: <span>{PHP.R.admin-home-recent|item_counter('posts', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_modules.pm} -->
-						<li>{PHP.L.home_newpms}: <span>{PHP.R.Recent|item_counter('pm', $this)}</span></li>
+						<li>{PHP.L.home_newpms}: <span>{PHP.R.admin-home-recent|item_counter('pm', $this)}</span></li>
 <!-- ENDIF -->
 <!-- IF {PHP.cot_modules.polls} -->
-						<li>{PHP.L.admin-new-polls}: <span>{PHP.R.Recent|item_counter('polls', $this)}</span></li>
+						<li>{PHP.L.admin-new-polls}: <span>{PHP.R.admin-home-recent|item_counter('polls', $this)}</span></li>
 <!-- ENDIF -->
-						<li>{PHP.L.home_newusers}: <span>{PHP.R.Recent|item_counter('users_reg', $this)}</span></li>
-						<li>{PHP.L.admin-ret-users}: <span>{PHP.R.Recent|item_counter('users', $this)}</span></li>
+						<li>{PHP.L.home_newusers}: <span>{PHP.R.admin-home-recent|item_counter('users_reg', $this)}</span></li>
+						<li>{PHP.L.admin-ret-users}: <span>{PHP.R.admin-home-recent|item_counter('users', $this)}</span></li>
 					</ul>
 				</div>
 <!-- ENDIF -->
