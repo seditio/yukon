@@ -27,6 +27,9 @@ $L['admin-system-config'] = 'Настройки системы';
 $L['admin-view-site'] = 'К сайту';
 $L['admin-within'] = 'за последние';
 
+$L['admin-best'] = 'лучших страниц';
+$L['admin-recent'] = 'последних страниц';
+
 // Topbar
 
 $L['admin-hide-sidebar'] = 'Скрыть сайдбар';

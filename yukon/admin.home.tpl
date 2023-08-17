@@ -35,6 +35,20 @@
 						</div>
 					</div>
 <!-- ENDIF -->
+<!-- IF {PHP.cot_plugins_active.pagelist} -->
+					<div class="block">
+						<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} {PHP.L.admin-best}</h2>
+{PHP.R.admin-home-best|cot_pagelist('pagelist.admin', $this, 'page_count DESC', 'page_count > 0')}
+					</div>
+					<div class="block">
+						<h2><i class="fa fa-file"></i> Новые страницы за {PHP.R.admin-home-recent|cot_declension($this, 'Days')}</h2>
+{PHP.R.admin-home-recent-stamp|cot_pagelist('pagelist.admin', '', 'page_date DESC', 'page_date > $this')}
+					</div>
+					<div class="block">
+						<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} последних страниц</h2>
+{PHP.R.admin-home-best|cot_pagelist('pagelist.admin', $this, 'page_date DESC')}
+					</div>
+<!-- ENDIF -->
 				</div>
 
 				<div class="col-lg-6 col-xxl-4">

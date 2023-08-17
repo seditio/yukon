@@ -39,9 +39,9 @@ $R['admin-button-secondary-class'] = 'btn-secondary';	// Secondary button class
 $R['admin-button-success-class'] = 'btn-success';	    // Success button class
 
 // Misc
-$R['Recent'] = '14';
-$R['Topbest'] = '10';
-$R['Toprecent'] = '10';
+$R['admin-home-best'] = 10;
+$R['admin-home-recent'] = 14;
+$R['admin-home-recent-stamp'] = $sys['now'] - $R['admin-home-recent'] * 86400;
 
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/modalbox.css?v='.$R['theme-revision'], 'css', 50);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
