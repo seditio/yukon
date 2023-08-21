@@ -23,7 +23,7 @@
 
 				<div class="col-lg-12 col-xxl-4">
 <!-- IF {PHP.cot_plugins_active.comlist} AND {PHP.cot_plugins_active.comments} -->
-{PHP|cot_comlist('comlist.admin','5','0','date','','','0')}
+{PHP|cot_comlist('comlist.admin','5')}
 <!-- ENDIF -->
 <!-- IF {PHP.cot_plugins_active.adminboard} -->
 					<div class="block">
