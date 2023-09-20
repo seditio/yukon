@@ -23,7 +23,10 @@ $L['admin-new-polls'] = 'Новые опросы';
 $L['admin-queued'] = 'на утверждении';
 $L['admin-recent-pages'] = 'лучших новых страниц';
 $L['admin-ret-users'] = 'Посещения';
-$L['admin-system-config'] = 'Настройки системы';
+
+// $L['admin-system-config'] = 'Настройки системы';
+// $L['admin-system-performance'] = 'Настройки системы';
+
 $L['admin-view-site'] = 'К сайту';
 $L['admin-within'] = 'за последние';
 

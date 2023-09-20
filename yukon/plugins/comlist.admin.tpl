@@ -7,11 +7,24 @@
 								<tr>
 									<td>
 										<p class="fw-bold mb-1">
-											{PAGE_ROW_COMLIST_DATE_STAMP|cot_date('d.m.y', $this)}: <a href="{PAGE_ROW_COMLIST_URL}">{PAGE_ROW_SHORTTITLE}</a>
+											{PAGE_ROW_DATE_STAMP|cot_date('d.m.y', $this)}:
+<!-- IF {PAGE_ROW_AREA} == 'page' -->
+<!-- IF {PAGE_ROW_CODE_IS_NUMERIC} -->
+											<a href="{PAGE_ROW_PAGE_URL}">{PAGE_ROW_PAGE_SHORTTITLE} ({PHP.L.Page})</a>
+<!-- ELSE -->
+											<a href="{PAGE_ROW_CAT_URL}">{PAGE_ROW_CAT_TITLE} ({PHP.L.Section})</a>
+<!-- ENDIF -->
+<!-- ENDIF -->
+
+<!-- IF {PAGE_ROW_AREA} == 'polls' -->
+											<a href="{PAGE_ROW_POLL_URL}">{PAGE_ROW_POLL_TITLE} ({PHP.L.Poll})</a>
+<!-- ENDIF -->
 										</p>
-										<div class="in0 mb-1">{PAGE_ROW_COMLIST_TEXT_PLAIN|cot_cutstring($this,'180')}</div>
+										<div class="in0 mb-1">
+											{PAGE_ROW_TEXT_PLAIN|cot_cutstring($this,'180')}
+										</div>
 										<p class="mb-0 text-end">
-											{PAGE_ROW_COMLIST_AUTHOR}
+											{PAGE_ROW_AUTHOR}
 										</p>
 									</td>
 								</tr>

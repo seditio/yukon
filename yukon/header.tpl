@@ -107,10 +107,10 @@
 		<div id="wrapper">
 
 			<div id="sidebar" class="overflow-hidden">
-				<a href="{PHP|cot_url('admin')}" id="logo" class="d-block text-center text-uppercase">
+				<a href="{PHP|cot_url('admin')}" id="logo" class="fw-bold d-block text-center text-uppercase">
 					{PHP.R.icon-dashboard}{PHP.L.Adminpanel}
 				</a>
-				<div id="profile" class="block mt-0 overflow-hidden">
+				<div id="profile" class="text-center block mt-0 overflow-hidden">
 					<p class="mb-1">
 						{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
 					</p>
@@ -121,27 +121,27 @@
 						<img src="/datas/defaultav/default.png" alt="" class="img-fluid" />
 <!-- ENDIF -->
 					</figure>
-					<ul class="list-unstyled m-0">
-						<li>
-							<a class="btn btn-xs" href="{PHP|cot_url('users','m=profile')}">
-								{PHP.R.icon-gear}<span>{PHP.L.Profile}</span>
+					<ul class="list-unstyled m-0 d-flex">
+						<li class="flex-fill">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=profile')}" title="{PHP.L.Profile}">
+								{PHP.R.icon-gear}
 							</a>
 						</li>
-						<li>
-							<a class="btn btn-xs" href="{PHP|cot_url('users','m=details')}">
-								{PHP.R.icon-user}<span>{PHP.L.Page}</span>
+						<li class="flex-fill">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=details')}" title="{PHP.L.Page}">
+								{PHP.R.icon-user}
 							</a>
 						</li>
 <!-- IF {PHP.cot_modules.pm} -->
-						<li>
-							<a class="btn btn-xs" href="{PHP|cot_url('pm')}">
-								{PHP.R.icon-comments}<span>{PHP.L.Private_Messages}</span>
+						<li class="flex-fill">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('pm')}" title="{PHP.L.Private_Messages}">
+								{PHP.R.icon-comment}
 							</a>
 						</li>
 <!-- ENDIF -->
-						<li>
-							<a class="btn btn-xs" href="{PHP.sys.xk|cot_url('login', 'out=1&x=$this')}">
-								{PHP.R.icon-door-open}<span>{PHP.L.Logout}</span>
+						<li class="flex-fill">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP.sys.xk|cot_url('login', 'out=1&x=$this')}" title="{PHP.L.Logout}">
+								{PHP.R.icon-door-open}
 							</a>
 						</li>
 					</ul>
@@ -149,7 +149,7 @@
 
 				<div id="menu" class="accordion accordion-flush">
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="menu1">{PHP.L.Navigation}</div>
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false" aria-controls="menu1">{PHP.L.Navigation}</div>
 						<div id="menu1" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -176,21 +176,30 @@
 						</div>
 					</div>
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_site_props}</div>
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false" aria-controls="menu2">{PHP.L.home_site_props}</div>
 						<div id="menu2" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
 									<li>
-										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.admin-system-config}</a>
+										{PHP.R.icon-globe}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.core_locale}</a>
 									</li>
 									<li>
-										{PHP.R.icon-code}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.core_title}</a>
+										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=main')}">{PHP.L.core_main}</a>
+									</li>
+									<li>
+										{PHP.R.icon-dashboard}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=performance')}">{PHP.L.core_performance}</a>
+									</li>
+									<li>
+										{PHP.R.icon-shield}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=security')}">{PHP.L.core_security}</a>
+									</li>
+									<li>
+										{PHP.R.icon-plug}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=sessions')}">{PHP.L.core_sessions}</a>
 									</li>
 									<li>
 										{PHP.R.icon-palette}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=theme')}">{PHP.L.core_theme}</a>
 									</li>
 									<li>
-										{PHP.R.icon-globe}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=locale')}">{PHP.L.Locale}</a>
+										{PHP.R.icon-code}<a href="{PHP|cot_url('admin','m=config&n=edit&o=core&p=title')}">{PHP.L.core_title}</a>
 									</li>
 									<li>
 										{PHP.R.icon-bars}<a href="{PHP|cot_url('admin','m=extrafields')}">{PHP.L.adm_extrafields}</a>
@@ -199,8 +208,9 @@
 							</div>
 						</div>
 					</div>
+<!-- IF {PHP.cot_modules.page} -->
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="menu3">{PHP.L.Pages}</div>
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="menu3">{PHP.L.Pages}</div>
 						<div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
@@ -211,10 +221,10 @@
 										{PHP.R.icon-bars}<a href="{PHP.db_pages|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_pages}</a>
 									</li>
 									<li>
-										{PHP.R.icon-ban}<a href="{PHP|cot_url('admin','m=page')}">{PHP.sys.pagesqueued|cot_declension($this, 'Pages')} {PHP.L.admin-queued}</a>
+										{PHP.R.icon-wrench}<a href="{PHP|cot_url('admin','m=page')}">{PHP.L.Management}</a>
 									</li>
 									<li>
-										{PHP.R.icon-plus}<a href="{PHP|cot_url('page','m=add')}">{PHP.L.Add}</a>
+										{PHP.R.icon-folder-tree}<a href="{PHP|cot_url('admin','m=structure&n=page')}">{PHP.L.Structure}</a>
 									</li>
 <!-- IF {PHP.cot_plugins_active.csv} -->
 									<li>
@@ -225,9 +235,36 @@
 							</div>
 						</div>
 					</div>
+<!-- ENDIF -->
+<!-- IF {PHP.cot_modules.forums} -->
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="menu4">{PHP.L.Users}</div>
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="menu4">{PHP.L.Forums}</div>
 						<div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menu">
+							<div class="accordion-body">
+								<ul class="list-unstyled m-0">
+									<li>
+										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=forums')}">{PHP.L.Configuration}</a>
+									</li>
+									<li>
+										{PHP.R.icon-bars}<a href="{PHP.db_forum_posts|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forum_posts}</a>
+									</li>
+									<li>
+										{PHP.R.icon-bars}<a href="{PHP.db_forum_topics|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forum_topics}</a>
+									</li>
+									<li>
+										{PHP.R.icon-wrench}<a href="{PHP|cot_url('admin','m=forums')}">{PHP.L.Management}</a>
+									</li>
+									<li>
+										{PHP.R.icon-folder-tree}<a href="{PHP|cot_url('admin','m=structure&n=forums')}">{PHP.L.Structure}</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+<!-- ENDIF -->
+					<div class="accordion-item menu_entry">
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu9" aria-expanded="false" aria-controls="menu9">{PHP.L.Users}</div>
+						<div id="menu9" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
 									<li>
@@ -250,22 +287,42 @@
 					<span class="fw-bold d-block">{PHP.L.admin-engine}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.version.title}: <span>{PHP.adminstats.version.value}</span></li>
-						<li>{PHP.adminstats.database.title}: <span>{PHP.adminstats.database.value}</span></li>
-
+						<li>{PHP.adminstats.admintheme.title}: <span>{PHP.adminstats.admintheme.value} {PHP.adminstats.admintheme.version}</span></li>
 						<li>{PHP.adminstats.defaulttheme.title}: <span>{PHP.adminstats.defaulttheme.value} {PHP.adminstats.defaulttheme.version}</span></li>
 						<li>{PHP.adminstats.defaultscheme.title}: <span>{PHP.adminstats.defaultscheme.value}</span></li>
 						<li>{PHP.adminstats.defaulticons.title}: <span>{PHP.adminstats.defaulticons.value} {PHP.adminstats.defaulticons.version}</span></li>
-						<li>{PHP.adminstats.admintheme.title}: <span>{PHP.adminstats.admintheme.value} {PHP.adminstats.admintheme.version}</span></li>
 						<li>{PHP.adminstats.defaultlang.title}: <span>{PHP.adminstats.defaultlang.value}</span></li>
-
+					</ul>
+				</div>
+				<div class="miniwidget block">
+					<span class="fw-bold d-block">{PHP.L.Database}:</span>
+					<ul class="list-unstyled m-0">
+						<li>{PHP.adminstats.database.title}: <span>{PHP.adminstats.database.value}</span></li>
+						<li>{PHP.adminstats.mysqlcharset.title}: <span>{PHP.adminstats.mysqlcharset.value}</span></li>
+						<li>{PHP.adminstats.db_counts.title}: <span>{PHP.adminstats.db_counts.value}</span></li>
+						<li>{PHP.adminstats.db_rows.title}: <span>{PHP.adminstats.db_rows.value}</span></li>
+						<li>{PHP.adminstats.db_indexsize.title}: <span>{PHP.adminstats.db_indexsize.value}</span></li>
+						<li>{PHP.adminstats.db_datassize.title}: <span>{PHP.adminstats.db_datassize.value}</span></li>
+						<li>{PHP.adminstats.db_totalsize.title}: <span>{PHP.adminstats.db_totalsize.value}</span></li>
+					</ul>
+				</div>
+				<div class="miniwidget block">
+					<span class="fw-bold d-block">{PHP.L.Extensions}:</span>
+					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.active_modules.title}: <span>{PHP.adminstats.active_modules.value} {PHP.L.Of} {PHP.adminstats.modules.value}</span></li>
 						<li>{PHP.adminstats.active_plugins.title}: <span>{PHP.adminstats.active_plugins.value} {PHP.L.Of} {PHP.adminstats.plugins.value}</span></li>
 						<li>{PHP.adminstats.active_hooks.title}: <span>{PHP.adminstats.active_hooks.value} {PHP.L.Of} {PHP.adminstats.hooks.value}</span></li>
-
-						<li>{PHP.adminstats.check_updates.title}: <span>{PHP.adminstats.check_updates.value}</span></li>
-						<li>{PHP.adminstats.debug_mode.title}: <span>{PHP.adminstats.debug_mode.value}</span></li>
 					</ul>
 				</div>
+				<div class="miniwidget block">
+					<span class="fw-bold d-block">{PHP.L.Settings}:</span>
+					<ul class="list-unstyled m-0">
+						<li>{PHP.adminstats.check_updates.title}: <span>{PHP.adminstats.check_updates.value}</span></li>
+						<li>{PHP.adminstats.debug_mode.title}: <span>{PHP.adminstats.debug_mode.value}</span></li>
+						<li>{PHP.adminstats.display_errors.title}: <span>{PHP.adminstats.display_errors.value}</span></li>
+					</ul>
+				</div>
+
 				<div class="miniwidget block">
 					<span class="fw-bold d-block">{PHP.L.admin-activity-for} {PHP.R.admin-home-recent|cot_declension($this, Days)}:</span>
 					<ul class="list-unstyled m-0">

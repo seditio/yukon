@@ -11,8 +11,8 @@
 					<table class="{PHP.R.admin-table-class}">
 						<thead>
 							<tr>
-								<th class="w-50">{PHP.L.Referer}</th>
-								<th class="w-50">{PHP.L.Hits}</th>
+								<th class="w-70">{PHP.L.Referer}</th>
+								<th class="w-30">{PHP.L.Hits}</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -33,22 +33,19 @@
 					<table class="{PHP.R.admin-table-class}">
 						<thead>
 							<tr>
-								<th class="w-50">{PHP.L.Referer}</th>
-								<th class="w-50">{PHP.L.Hits}</th>
+								<th class="w-70">{PHP.L.Referer}</th>
+								<th class="w-30">{PHP.L.Hits}</th>
 							</tr>
 						</thead>
 						<tbody>
 <!-- BEGIN: REFERERS_ROW -->
 							<tr>
-								<td>
-									<a href="{ADMIN_REFERERS_REFERER}">{ADMIN_REFERERS_REFERER}</a>
-								</td>
-								<td>
+								<td><a href="http://{ADMIN_REFERERS_REFERER}">{ADMIN_REFERERS_REFERER}</a></td>
 <!-- BEGIN: REFERERS_URI -->
-									<div><a href="{ADMIN_REFERERS_URI}">{ADMIN_REFERERS_URI}</a> {ADMIN_REFERERS_COUNT}</div>
-<!-- END: REFERERS_URI -->
-								</td>
+								<td><a href="{ADMIN_REFERERS_URI}">{ADMIN_REFERERS_URI}</a></td>
+								<td class="text-end">{ADMIN_REFERERS_COUNT}</td>
 							</tr>
+<!-- END: REFERERS_URI -->
 <!-- END: REFERERS_ROW -->
 						</tbody>
 					</table>

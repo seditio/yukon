@@ -30,13 +30,12 @@ $R['breadcrumbs_last'] = '<li class="breadcrumb-item active">{$crumb}</li>';
 $R['breadcrumbs_separator'] = '';
 
 // My Custom RC
-$R['link_pagenav_main'] = '<li class="page-item"><a class="page-link px-3" href="{$url}"{$event}{$rel}>{$num}</a></li>';
-$R['link_pagenav_current'] = '<li class="page-item active"><a class="page-link px-3" href="{$url}"{$event}{$rel}>{$num}</a></li>';
-$R['link_pagenav_prev'] = '<li class="page-item previous"><a class="page-link px-3" href="{$url}"{$event}{$rel}>'.$L['pagenav_prev'].'</a></li>';
-$R['link_pagenav_next'] = '<li class="page-item next"><a class="page-link px-3" href="{$url}"{$event}{$rel}>'.$L['pagenav_next'].'</a></li>';
-$R['link_pagenav_first'] = '<li class="page-item first"><a class="page-link px-3" href="{$url}"{$event}{$rel}>'.$L['pagenav_first'].'</a></li>';
-$R['link_pagenav_last'] = '<li class="page-item last"><a class="page-link px-3" href="{$url}"{$event}{$rel}>'.$L['pagenav_last'].'</a></li>';
-$R['link_pagenav_gap'] = '<li class="page-item gap"><span class="page-link">...</span></li>';
+$R['link_pagenav_current']  = '<li class="page-item active"><a href="{$url}" class="page-link {$class}" {$rel}>{$num}</a></li>';
 
-$R['input_text_metatitle'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="65" class="input-block-level">{$value}</textarea>';
-$R['input_text_metadesc'] = '<textarea name="{$name}" rows="2" cols="64" maxlength="155" class="input-block-level">{$value}</textarea>';
+$R['link_pagenav_first']    = '<li class="page-item"><a href="{$url}" class="page-link {$class}" {$rel}>'.$R['icon-arrow-left'].'</a></li>';
+$R['link_pagenav_prev']     = '<li class="page-item"><a href="{$url}" class="page-link {$class}" {$rel}>'.$R['icon-chevron-left'].'</a></li>';
+$R['link_pagenav_main']     = '<li class="page-item"><a href="{$url}" class="page-link {$class}" {$rel}>{$num}</a></li>';
+$R['link_pagenav_next']     = '<li class="page-item"><a href="{$url}" class="page-link {$class}" {$rel}>'.$R['icon-chevron-right'].'</a></li>';
+$R['link_pagenav_last']     = '<li class="page-item"><a href="{$url}" class="page-link {$class}" {$rel}>'.$R['icon-arrow-right'].'</a></li>';
+
+$R['link_pagenav_gap']      = '<li class="page-item disabled"><span class="page-link">...</span></li>';

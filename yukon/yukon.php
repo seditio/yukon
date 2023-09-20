@@ -2,7 +2,7 @@
 /* ====================
 [BEGIN_COT_THEME]
 Name=Yukon
-Version=2.11b
+Version=3.00b
 Schemes=default:Default
 [END_COT_THEME]
 ==================== */
@@ -16,9 +16,10 @@ Schemes=default:Default
  */
 
 (defined('COT_CODE') && defined('COT_ADMIN')) or die('Wrong URL.');
+include_once cot_incfile('icons', 'plug', 'rc');
 require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
-$R['theme-revision'] = 252;
+$R['theme-revision'] = 253;
 
 // Template Settings
 $R['admin-pagination-nav-class'] = 'mt-3';																					// Navigation parent class
@@ -44,7 +45,7 @@ $R['admin-home-recent'] = 14;
 $R['admin-home-recent-stamp'] = $sys['now'] - $R['admin-home-recent'] * 86400;
 
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/modalbox.css?v='.$R['theme-revision'], 'css', 50);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/responsive.css?v='.$R['theme-revision'], 'css', 52);
+Resources::addFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
+Resources::addFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/responsive.css?v='.$R['theme-revision'], 'css', 52);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/jquery.cookie.js', 'js', 99);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.js?v='.$R['theme-revision'], 'js', 100);
