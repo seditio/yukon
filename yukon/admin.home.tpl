@@ -121,6 +121,15 @@
 		{PHP|sedby_comlist('comlist.admin', 4, 'com_date DESC')}
 		<!-- ENDIF -->
 
+		<!-- IF {PHP.cot_plugins_active.thanks} -->
+		<div class="block">
+			<h2>{PHP.R.icon-gears}{PHP.L.thanks_title}</h2>
+			<div class="wrapper">
+				{PHP|thanks_render_user('thanks.admin.user', 5)}
+			</div>
+		</div>
+		<!-- ENDIF -->
+
 	</div>
 
 	<div class="col-xl-4">

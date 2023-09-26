@@ -246,10 +246,10 @@
 										{PHP.R.icon-gear}<a href="{PHP|cot_url('admin','m=config&amp;n=edit&amp;o=module&amp;p=forums')}">{PHP.L.Configuration}</a>
 									</li>
 									<li>
-										{PHP.R.icon-bars}<a href="{PHP.db_forum_posts|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forum_posts}</a>
+										{PHP.R.icon-bars}<a href="{PHP.db_forum_posts|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forums_posts}</a>
 									</li>
 									<li>
-										{PHP.R.icon-bars}<a href="{PHP.db_forum_topics|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forum_topics}</a>
+										{PHP.R.icon-bars}<a href="{PHP.db_forum_topics|cot_url('admin','m=extrafields&n=$this')}">{PHP.L.home_extrafields_forums_topics}</a>
 									</li>
 									<li>
 										{PHP.R.icon-wrench}<a href="{PHP|cot_url('admin','m=forums')}">{PHP.L.Management}</a>
