@@ -21,7 +21,7 @@
 <!-- BEGIN: ADMIN_CONFIG_ROW -->
 <!-- BEGIN: ADMIN_CONFIG_FIELDSET_BEGIN -->
 										<tr>
-											<td class="group_begin px-0 py-3 border-end-0 border-start-0" colspan="3">
+											<td class="group_begin py-3 border-end-0 border-start-0" colspan="3">
 												<h4>{ADMIN_CONFIG_FIELDSET_TITLE}</h4>
 											</td>
 										</tr>
