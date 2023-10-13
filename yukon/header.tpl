@@ -115,10 +115,10 @@
 						{PHP.L.admin-hi}, <a href="{PHP|cot_url('users','m=profile')}">{PHP.usr.name}</a>
 					</p>
 					<figure class="mb-2">
-<!-- IF {PHP.user_avatar} -->
-						<img src="{PHP.user_avatar}" alt="" class="img-fluid" />
+<!-- IF {PHP.usr.profile.user_avatar} -->
+						<img src="{PHP.usr.profile.user_avatar}" alt="" class="img-fluid" />
 <!-- ELSE -->
-						<img src="/datas/defaultav/default.png" alt="" class="img-fluid" />
+						<img src="datas/defaultav/blank.png" alt="" class="img-fluid" />
 <!-- ENDIF -->
 					</figure>
 					<ul class="list-unstyled m-0 d-flex">
@@ -320,6 +320,20 @@
 						<li>{PHP.adminstats.check_updates.title}: <span>{PHP.adminstats.check_updates.value}</span></li>
 						<li>{PHP.adminstats.debug_mode.title}: <span>{PHP.adminstats.debug_mode.value}</span></li>
 						<li>{PHP.adminstats.display_errors.title}: <span>{PHP.adminstats.display_errors.value}</span></li>
+					</ul>
+				</div>
+				<div class="miniwidget block">
+					<span class="fw-bold d-block">{PHP.L.admin-cache}:</span>
+					<ul class="list-unstyled m-0">
+						<li>{PHP.adminstats.cache.title}: <span>{PHP.adminstats.cache.value}</span></li>
+						<!-- IF {PHP.adminstats.cache.value} != {PHP.L.Disabled} -->
+						<li>{PHP.adminstats.cache_drv.title}: <span>{PHP.adminstats.cache_drv.value}</span></li>
+						<!-- ENDIF -->
+						<li>{PHP.adminstats.xtpl_cache.title}: <span>{PHP.adminstats.xtpl_cache.value}</span></li>
+						<li>{PHP.adminstats.html_cleanup.title}: <span>{PHP.adminstats.html_cleanup.value}</span></li>
+						<li>{PHP.adminstats.cache_index.title}: <span>{PHP.adminstats.cache_index.value}</span></li>
+						<li>{PHP.adminstats.cache_page.title}: <span>{PHP.adminstats.cache_page.value}</span></li>
+						<li>{PHP.adminstats.cache_forums.title}: <span>{PHP.adminstats.cache_forums.value}</span></li>
 					</ul>
 				</div>
 

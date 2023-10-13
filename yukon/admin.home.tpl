@@ -25,7 +25,6 @@
 		<!-- IF {PHP.cot_plugins_active.metrika} -->
 		{ADMIN_HOME_METRIKA}
 		<!-- ENDIF -->
-
 		<!-- IF {PHP.cot_plugins_active.pagelist} -->
 		<div class="block">
 			<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} последних страниц</h2>
@@ -40,10 +39,6 @@
 			{PHP.R.admin-home-recent-stamp|sedby_pagelist('pagelist.admin', '', 'page_date DESC', 'page_date > $this')}
 		</div>
 		<!-- ENDIF -->
-
-		<!-- BEGIN: MAINPANEL -->
-		{ADMIN_HOME_MAINPANEL}
-		<!-- END: MAINPANEL -->
 	</div>
 
 	<div class="col-xl-4">
@@ -125,11 +120,10 @@
 		<div class="block">
 			<h2>{PHP.R.icon-gears}{PHP.L.thanks_title}</h2>
 			<div class="wrapper">
-				{PHP|thanks_render_user('thanks.admin.user', 5)}
+				{PHP|thanks_render_user('thanks.admin.home', 5)}
 			</div>
 		</div>
 		<!-- ENDIF -->
-
 	</div>
 
 	<div class="col-xl-4">
@@ -155,53 +149,12 @@
 		</div>
 		<!-- ENDIF -->
 
+		<!-- BEGIN: MAINPANEL -->
+		{ADMIN_HOME_MAINPANEL}
+		<!-- END: MAINPANEL -->
+
 		<!-- IF {PHP.cot_plugins_active.adminstats} -->
-		<div class="block">
-			<h2>{PHP.R.icon-plug}{PHP.L.Extensions}:</h2>
-			<div class="wrapper">
-				<table class="table table-striped">
-					<tr>
-						<td>{PHP.adminstats.active_modules.title}</td>
-						<td class="text-end">{PHP.adminstats.active_modules.value} {PHP.L.Of} {PHP.adminstats.modules.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.active_plugins.title}</td>
-						<td class="text-end">{PHP.adminstats.active_plugins.value} {PHP.L.Of} {PHP.adminstats.plugins.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.active_hooks.title}</td>
-						<td class="text-end">{PHP.adminstats.active_hooks.value} {PHP.L.Of} {PHP.adminstats.hooks.value}</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div class="block">
-			<h2>{PHP.R.icon-shield}{PHP.L.Security}:</h2>
-			<div class="wrapper">
-				<table class="table table-striped">
-					<tr>
-						<td>{PHP.adminstats.debug_mode.title}</td>
-						<td class="text-end lower">{PHP.adminstats.debug_mode.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.display_errors.title}</td>
-						<td class="text-end lower">{PHP.adminstats.display_errors.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.ipcheck.title}</td>
-						<td class="text-end lower">{PHP.adminstats.ipcheck.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.authcache.title}</td>
-						<td class="text-end lower">{PHP.adminstats.authcache.value}</td>
-					</tr>
-					<tr>
-						<td>{PHP.adminstats.useremailduplicate.title}</td>
-						<td class="text-end lower">{PHP.adminstats.useremailduplicate.value}</td>
-					</tr>
-				</table>
-			</div>
-		</div>
+		<!-- BEGIN: NOPARSE -->
 		<div class="block">
 			<h2>{PHP.R.icon-code}{PHP.L.admin-cache}:</h2>
 			<div class="wrapper">
@@ -235,6 +188,52 @@
 					<tr>
 						<td>{PHP.adminstats.cache_forums.title}</td>
 						<td class="text-end lower">{PHP.adminstats.cache_forums.value}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="block">
+			<h2>{PHP.R.icon-shield}{PHP.L.Security}:</h2>
+			<div class="wrapper">
+				<table class="table table-striped">
+					<tr>
+						<td>{PHP.adminstats.debug_mode.title}</td>
+						<td class="text-end lower">{PHP.adminstats.debug_mode.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.display_errors.title}</td>
+						<td class="text-end lower">{PHP.adminstats.display_errors.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.ipcheck.title}</td>
+						<td class="text-end lower">{PHP.adminstats.ipcheck.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.authcache.title}</td>
+						<td class="text-end lower">{PHP.adminstats.authcache.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.useremailduplicate.title}</td>
+						<td class="text-end lower">{PHP.adminstats.useremailduplicate.value}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="block">
+			<h2>{PHP.R.icon-plug}{PHP.L.Extensions}:</h2>
+			<div class="wrapper">
+				<table class="table table-striped">
+					<tr>
+						<td>{PHP.adminstats.active_modules.title}</td>
+						<td class="text-end">{PHP.adminstats.active_modules.value} {PHP.L.Of} {PHP.adminstats.modules.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.active_plugins.title}</td>
+						<td class="text-end">{PHP.adminstats.active_plugins.value} {PHP.L.Of} {PHP.adminstats.plugins.value}</td>
+					</tr>
+					<tr>
+						<td>{PHP.adminstats.active_hooks.title}</td>
+						<td class="text-end">{PHP.adminstats.active_hooks.value} {PHP.L.Of} {PHP.adminstats.hooks.value}</td>
 					</tr>
 				</table>
 			</div>
@@ -274,6 +273,7 @@
 				</table>
 			</div>
 		</div>
+		<!-- END: NOPARSE -->
 		<!-- ENDIF -->
 	</div>
 
