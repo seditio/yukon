@@ -47,5 +47,6 @@ $R['admin-home-recent-stamp'] = $sys['now'] - $R['admin-home-recent'] * 86400;
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/modalbox.css?v='.$R['theme-revision'], 'css', 50);
 Resources::addFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
 Resources::addFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/responsive.css?v='.$R['theme-revision'], 'css', 52);
+
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/jquery.cookie.js', 'js', 99);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.js?v='.$R['theme-revision'], 'js', 100);

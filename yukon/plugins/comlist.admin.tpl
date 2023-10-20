@@ -8,7 +8,7 @@
 				<tr>
 					<td>
 						<p class="fw-bold mb-1">
-							{PAGE_ROW_DATE_STAMP|cot_date('d.m.y', $this)}:
+							{PAGE_ROW_DATE_STAMP|cot_date('H:i d.m.y', $this)}:
 							<!-- IF {PAGE_ROW_AREA} == 'page' -->
 							<!-- IF {PAGE_ROW_CODE_IS_NUMERIC} -->
 							<a href="{PAGE_ROW_PAGE_URL}">{PAGE_ROW_PAGE_SHORTTITLE} ({PHP.L.Page})</a>
@@ -24,7 +24,7 @@
 							{PAGE_ROW_TEXT_PLAIN|cot_cutstring($this,'180')}
 						</div>
 						<p class="mb-0 text-end">
-							{PAGE_ROW_AUTHOR}
+							{PAGE_ROW_AUTHORNAME}
 						</p>
 					</td>
 				</tr>

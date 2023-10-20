@@ -8,10 +8,14 @@
 @maincolor:		#3c3c3c;
 @mainback:    @white;
 
-.app        	{ display: block; position: relative; overflow: hidden; }
-.cut					{ text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
-.centerall		{ text-align: center; vertical-align: middle; }
-.trans				{ transition: all .4s ease; }
+.app        					{ display: block; position: relative; overflow: hidden; }
+
+.cut									{ text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.truncate	(@lines: 1)	{ -webkit-line-clamp: @lines; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+
+.centerall						{ text-align: center; vertical-align: middle; }
+
+.trans								{ transition: all .4s ease; }
 
 .last0 {
 	&:last-child { margin-right: 0; margin-bottom: 0; }

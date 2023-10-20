@@ -31,7 +31,7 @@ $L['admin-view-site'] = 'К сайту';
 $L['admin-within'] = 'за последние';
 
 $L['admin-best'] = 'лучших страниц';
-$L['admin-recent'] = 'последних страниц';
+$L['admin-recent'] = 'новых страниц';
 
 // Topbar
 

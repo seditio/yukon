@@ -19,6 +19,10 @@
 </div>
 <!-- ENDIF -->
 
+<!-- IF {PHP.cot_plugins_active.admincharts} -->
+{ADMIN_HOME_CHARTS}
+<!-- ENDIF -->
+
 <div class="row">
 
 	<div class="col-xl-4">
@@ -27,7 +31,7 @@
 		<!-- ENDIF -->
 		<!-- IF {PHP.cot_plugins_active.pagelist} -->
 		<div class="block">
-			<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} последних страниц</h2>
+			<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} {PHP.L.admin-recent}</h2>
 			{PHP.R.admin-home-best|sedby_pagelist('pagelist.admin', $this, 'page_date DESC')}
 		</div>
 		<div class="block">

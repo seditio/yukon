@@ -263,8 +263,8 @@
 					</div>
 <!-- ENDIF -->
 					<div class="accordion-item menu_entry">
-						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu9" aria-expanded="false" aria-controls="menu9">{PHP.L.Users}</div>
-						<div id="menu9" class="accordion-collapse collapse" data-bs-parent="#menu">
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false" aria-controls="menu5">{PHP.L.Users}</div>
+						<div id="menu5" class="accordion-collapse collapse" data-bs-parent="#menu">
 							<div class="accordion-body">
 								<ul class="list-unstyled m-0">
 									<li>
@@ -275,6 +275,19 @@
 									</li>
 									<li>
 										{PHP.R.icon-lock}<a href="{PHP|cot_url('admin','m=users')}">{PHP.L.home_users_rights}</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item menu_entry">
+						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu6" aria-expanded="false" aria-controls="menu6">Сейчас онлайн</div>
+						<div id="menu6" class="accordion-collapse collapse" data-bs-parent="#menu">
+							<div class="accordion-body">
+								<ul class="list-unstyled m-0">
+									<li>
+										{PHP.out.whosonline}:<br />
+										{PHP.out.whosonline_reg_list}
 									</li>
 								</ul>
 							</div>
