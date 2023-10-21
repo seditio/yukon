@@ -43,13 +43,15 @@ div#topbar									{  }
 	a#logo								{ color: @grey; font-size: .875rem; text-shadow: 0 1px 0 @white; line-height: 2.25rem; }
 	a#logo i							{ font-size: 1.375rem; margin-right: .375rem; vertical-align: -3px; }
 
-	div#profile							{ padding: .3125rem .625rem .5rem; }
-		div#profile figure		{ max-width: 8rem; border: 3px solid fade(@grey, 25%); display: inline-block; }
+	div#profile									{ padding: .3125rem .625rem .5rem; }
+		div#profile figure				{ max-width: 8rem; border: 3px solid fade(@grey, 25%); display: inline-block; }
 		div#profile div.user-icon	{ font-size: 4rem; line-height: 6rem; text-align: center; width: ~'calc(6rem + 6px)'; border: 3px solid fade(@grey, 25%); }
-		div#profile ul li			{ margin: 0 4px 0 0; .last0; }
-		div#profile ul li a		{ font-size: 1rem; background: #e6e6e6; opacity: .65; .cut; }
-		div#profile ul li a:hover	{ opacity: 1; }
-		div#profile ul li a i			{ min-width: 1.5rem; }
+
+		div#profile ul.buttons > li						{ margin: 0 4px 0 0; .last0; }
+		div#profile ul.buttons > li > a				{ font-size: 1rem; background: #e6e6e6; opacity: .65; .cut; }
+		div#profile ul.buttons > li > a:hover	{ opacity: 1; }
+		div#profile ul.buttons > li > a > i		{ min-width: 1.5rem; }
+		div#profile ul.buttons > li > i				{ margin: 3px 3px 0 0; }
 
 	#menu																							{ margin: .75rem 0; }
 		#menu .accordion-item														{  }
@@ -65,7 +67,7 @@ div#topbar									{  }
 		#menu ul > li > a	 				{ color: @grey; font-weight: 600; text-transform: uppercase; }
 		#menu ul > li > a:hover		{ text-decoration: underline; }
 
-	.miniwidget									{ padding: .5rem .625rem; }
+	.miniwidget									{ padding: .5rem .625rem; border-radius: @block_border_radius; }
 	.miniwidget ul							{ font-size: .6875rem; font-weight: 100; text-shadow: 0 1px 0 @white; }
 	.miniwidget ul li						{ padding: .1875rem 0; border-bottom: 1px dotted #ccc; overflow: hidden; }
 	.miniwidget ul li a,
@@ -79,7 +81,7 @@ div#content					{  }
 	select#selectmenu						{  }
 	nav#navigation > div.row		{ display: none; }
 
-	div#content div.block					{ margin: 0 0 1.25rem; background: @white; border: 1px solid #c1c1c1; }
+	div#content div.block					{ margin: 0 0 1.25rem; background: @white; border: 1px solid #c1c1c1; border-radius: @block_border_radius; overflow: hidden; }
 	div#content div.block > h2		{ font-size: .875rem; font-weight: 700; line-height: 20px; padding: .625rem 1rem; background-color: #f4f4f4; background-image: linear-gradient(to bottom, #f8f8f8, #dcdcdc); border-bottom: 1px solid #c1c1c1; box-shadow: 0 1px 0 0 #f7f7f7, 0 5px 4px -4px #d8d8d8; }
 	div#content div.block > h2 i	{ margin-right: .375rem; }
 	div#content div.block div.wrapper																	{ padding: 1rem; }

@@ -44,6 +44,8 @@ $L['admin-show-menu'] = 'Показать меню';
 $L['admin-fullscreen-off'] = 'В окне';
 $L['admin-fullscreen-on'] = 'На весь экран';
 
+$L['admin-myip'] = 'Мой IP';
+
 // Declension
 
 $Ls['admin-hits'] = 'просмотр,просмотра,просмотров';

@@ -38,6 +38,8 @@ $L['admin-show-menu'] = 'Show Menu';
 $L['admin-fullscreen-off'] = 'Windowed';
 $L['admin-fullscreen-on'] = 'Fullscreen';
 
+$L['admin-myip'] = 'My IP';
+
 // Declension
 
 $Ls['admin-hits'] = 'hits,hit';

@@ -21,6 +21,44 @@ require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
 $R['theme-revision'] = 253;
 
+function sedby_get_ip() {
+	// if user uses shared internet
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+		return $_SERVER['HTTP_CLIENT_IP'];
+	}
+	// if user is behind proxy
+	elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		return $_SERVER['HTTP_X_FORWARDED_FOR'];
+	}
+	// if user has remote address
+	else {
+		return $_SERVER['REMOTE_ADDR'];
+	}
+}
+
+function sedby_get_browser($user_agent) {
+		if (strpos($user_agent, 'Opera') || strpos($user_agent, 'OPR/')) return 'Opera';
+		elseif (strpos($user_agent, 'Edge')) return 'MS Edge';
+		elseif (strpos($user_agent, 'Chrome')) return 'Google Chrome';
+		elseif (strpos($user_agent, 'Safari')) return 'Apple Safari';
+		elseif (strpos($user_agent, 'Firefox')) return 'Mozilla Firefox';
+		elseif (strpos($user_agent, 'MSIE') || strpos($user_agent, 'Trident/7')) return 'MS IE';
+		return 'Other';
+}
+$browser = sedby_get_browser($_SERVER['HTTP_USER_AGENT']);
+
+function sedby_get_os($user_agent){
+	if (strpos($user_agent, 'Linux')) return 'Linus';
+	elseif (strpos($user_agent, 'Win')) return 'Windows';
+	elseif (strpos($user_agent, 'Mac')) return 'Mac';
+	return 'Other';
+}
+$os = sedby_get_os($_SERVER['HTTP_USER_AGENT']);
+
+// echo '<pre>';
+// print_r($_SERVER['HTTP_USER_AGENT']);
+// echo '</pre>';
+
 // Template Settings
 $R['admin-pagination-nav-class'] = 'mt-3';																					// Navigation parent class
 $R['admin-pagination-list-class'] = 'pagination-sm justify-content-xl-center m-0';	// Navigation list class

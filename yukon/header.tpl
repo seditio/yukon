@@ -121,7 +121,7 @@
 						<img src="datas/defaultav/blank.png" alt="" class="img-fluid" />
 <!-- ENDIF -->
 					</figure>
-					<ul class="list-unstyled m-0 d-flex">
+					<ul class="list-unstyled mb-1 d-flex buttons">
 						<li class="flex-fill">
 							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=profile')}" title="{PHP.L.Profile}">
 								{PHP.R.icon-gear}
@@ -133,10 +133,11 @@
 							</a>
 						</li>
 <!-- IF {PHP.cot_modules.pm} -->
-						<li class="flex-fill">
+						<li class="flex-fill position-relative">
 							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('pm')}" title="{PHP.L.Private_Messages}">
 								{PHP.R.icon-comment}
 							</a>
+							<!-- IF {PHP.usr.messages} --><i class="p-1 bg-danger border border-light rounded-circle position-absolute top-0 end-0"><b class="visually-hidden">{PHP.usr.messages}</b></i><!-- ENDIF -->
 						</li>
 <!-- ENDIF -->
 						<li class="flex-fill">
@@ -145,6 +146,13 @@
 							</a>
 						</li>
 					</ul>
+					<ul class="list-unstyled text-center mb-0">
+						<li>
+							{PHP.L.admin-myip}: {PHP|sedby_get_ip}
+						</li>
+						<li>
+							{PHP.browser} / {PHP.os}
+						</li>
 				</div>
 
 				<div id="menu" class="accordion accordion-flush">
@@ -297,7 +305,7 @@
 
 <!-- IF {PHP.cot_plugins_active.adminstats} -->
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.admin-engine}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.admin-engine}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.version.title}: <span>{PHP.adminstats.version.value}</span></li>
 						<li>{PHP.adminstats.admintheme.title}: <span>{PHP.adminstats.admintheme.value} {PHP.adminstats.admintheme.version}</span></li>
@@ -308,7 +316,7 @@
 					</ul>
 				</div>
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.Database}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.Database}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.database.title}: <span>{PHP.adminstats.database.value}</span></li>
 						<li>{PHP.adminstats.mysqlcharset.title}: <span>{PHP.adminstats.mysqlcharset.value}</span></li>
@@ -320,7 +328,7 @@
 					</ul>
 				</div>
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.Extensions}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.Extensions}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.active_modules.title}: <span>{PHP.adminstats.active_modules.value} {PHP.L.Of} {PHP.adminstats.modules.value}</span></li>
 						<li>{PHP.adminstats.active_plugins.title}: <span>{PHP.adminstats.active_plugins.value} {PHP.L.Of} {PHP.adminstats.plugins.value}</span></li>
@@ -328,7 +336,7 @@
 					</ul>
 				</div>
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.Settings}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.Settings}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.check_updates.title}: <span>{PHP.adminstats.check_updates.value}</span></li>
 						<li>{PHP.adminstats.debug_mode.title}: <span>{PHP.adminstats.debug_mode.value}</span></li>
@@ -336,7 +344,7 @@
 					</ul>
 				</div>
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.admin-cache}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.admin-cache}:</span>
 					<ul class="list-unstyled m-0">
 						<li>{PHP.adminstats.cache.title}: <span>{PHP.adminstats.cache.value}</span></li>
 						<!-- IF {PHP.adminstats.cache.value} != {PHP.L.Disabled} -->
@@ -351,7 +359,7 @@
 				</div>
 
 				<div class="miniwidget block">
-					<span class="fw-bold d-block">{PHP.L.admin-activity-for} {PHP.R.admin-home-recent|cot_declension($this, Days)}:</span>
+					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.admin-activity-for} {PHP.R.admin-home-recent|cot_declension($this, Days)}:</span>
 					<ul class="list-unstyled m-0">
 <!-- IF {PHP.cot_modules.page} -->
 						<li>{PHP.L.home_newpages}: <span>{PHP.R.admin-home-recent|item_counter('pages', $this)}</span></li>
@@ -377,7 +385,7 @@
 				<div class="miniwidget block">
 					<ul class="list-unstyled m-0">
 						<li>Powered by <a href="https://www.cotonti.com">Cotonti Siena {PHP.cfg.version}</a></li>
-						<li>Theme developed by <a href="https://www.seditio.by">Seditio.by</a></li>
+						<li>Theme developed by <a href="https://sed.by">SED.BY</a></li>
 					</ul>
 				</div>
 			</div>
