@@ -11,13 +11,7 @@
 </div>
 <!-- END: UPDATE -->
 
-<!-- IF {ERROR_ROW_MSG} -->
-<div class="row">
-	<div class="col">
-		{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
-	</div>
-</div>
-<!-- ENDIF -->
+{FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
 <!-- IF {PHP.cot_plugins_active.admincharts} -->
 {ADMIN_HOME_CHARTS}
