@@ -9,7 +9,7 @@
 					<h1 class="my-2">{ADMIN_TITLE}</h1>
 					<div class="row">
 						<div class="col-md-2">
-							<a href="{PHP|cot_url('admin', '')}" id="nv-home" class="nv<!-- IF !{PHP.m} --> sel<!-- ENDIF -->">
+							<a href="{PHP|cot_url('admin', '')}" id="nv-home" class="nv<!-- IF {PHP.m} == '01' --> sel<!-- ENDIF -->">
 								<span>{PHP.L.Home}</span>
 								{PHP.R.icon-house}
 							</a>
