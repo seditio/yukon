@@ -43,9 +43,10 @@ div#topbar									{  }
 	a#logo								{ color: @grey; font-size: .875rem; text-shadow: 0 1px 0 @white; line-height: 2.25rem; }
 	a#logo i							{ font-size: 1.375rem; margin-right: .375rem; vertical-align: -3px; }
 
-	div#profile									{ padding: .3125rem .625rem .5rem; }
-		div#profile figure				{ max-width: 8rem; border: 3px solid fade(@grey, 25%); display: inline-block; }
-		div#profile div.user-icon	{ font-size: 4rem; line-height: 6rem; text-align: center; width: ~'calc(6rem + 6px)'; border: 3px solid fade(@grey, 25%); }
+	div#profile										{ padding: .3125rem .625rem .5rem; }
+		div#profile > p:first-child	{ .cut; }
+		div#profile figure					{ max-width: 8rem; border: 3px solid fade(@grey, 25%); display: inline-block; }
+		div#profile div.user-icon		{ font-size: 4rem; line-height: 6rem; text-align: center; width: ~'calc(6rem + 6px)'; border: 3px solid fade(@grey, 25%); }
 
 		div#profile ul.user_buttons > li						{ margin: 0 4px 0 0; .last0; }
 		div#profile ul.user_buttons > li > a				{ color: @grey; font-size: .875rem; background: @light; .cut; .trans; }
