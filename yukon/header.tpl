@@ -121,7 +121,7 @@
 						<img src="datas/defaultav/blank.png" alt="" class="img-fluid" />
 <!-- ENDIF -->
 					</figure>
-					<ul class="list-unstyled mb-1 d-flex buttons">
+					<ul class="list-unstyled mb-1 d-flex user_buttons">
 						<li class="flex-fill">
 							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=profile')}" title="{PHP.L.Profile}">
 								{PHP.R.icon-gear}
@@ -146,7 +146,7 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="list-unstyled text-center mb-0">
+					<ul class="list-unstyled btn text-center mb-0 w-100 border-dark-subtle user_info">
 						<li>
 							{PHP.L.admin-myip}: {PHP|sedby_get_ip}
 						</li>

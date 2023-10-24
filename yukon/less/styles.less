@@ -47,11 +47,13 @@ div#topbar									{  }
 		div#profile figure				{ max-width: 8rem; border: 3px solid fade(@grey, 25%); display: inline-block; }
 		div#profile div.user-icon	{ font-size: 4rem; line-height: 6rem; text-align: center; width: ~'calc(6rem + 6px)'; border: 3px solid fade(@grey, 25%); }
 
-		div#profile ul.buttons > li						{ margin: 0 4px 0 0; .last0; }
-		div#profile ul.buttons > li > a				{ font-size: 1rem; background: #e6e6e6; opacity: .65; .cut; }
-		div#profile ul.buttons > li > a:hover	{ opacity: 1; }
-		div#profile ul.buttons > li > a > i		{ min-width: 1.5rem; }
-		div#profile ul.buttons > li > i				{ margin: 3px 3px 0 0; }
+		div#profile ul.user_buttons > li						{ margin: 0 4px 0 0; .last0; }
+		div#profile ul.user_buttons > li > a				{ color: @grey; font-size: .875rem; background: @light; .cut; .trans; }
+		div#profile ul.user_buttons > li > a:hover	{ background: @light - #111; }
+		div#profile ul.user_buttons > li > a > i		{ min-width: 1.5rem; }
+		div#profile ul.user_buttons > li > i				{ margin: 3px 3px 0 0; }
+
+		div#profile ul.user_info										{ font-size: .6875rem; padding: .25rem 0; background: @light; }
 
 	#menu																							{ margin: .75rem 0; }
 		#menu .accordion-item														{  }
