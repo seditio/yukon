@@ -55,10 +55,6 @@ function sedby_get_os($user_agent){
 }
 $os = sedby_get_os($_SERVER['HTTP_USER_AGENT']);
 
-// echo '<pre>';
-// print_r($_SERVER['HTTP_USER_AGENT']);
-// echo '</pre>';
-
 // Template Settings
 $R['admin-pagination-nav-class'] = 'mt-3';																					// Navigation parent class
 $R['admin-pagination-list-class'] = 'pagination-sm justify-content-xl-center m-0';	// Navigation list class
