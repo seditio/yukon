@@ -263,7 +263,13 @@
 								<td>{ADMIN_EXTENSIONS_DETAILS_ROW_PART}</td>
 								<td>{ADMIN_EXTENSIONS_DETAILS_ROW_FILE}</td>
 								<td>{ADMIN_EXTENSIONS_DETAILS_ROW_HOOKS}</td>
-								<td>{ADMIN_EXTENSIONS_DETAILS_ROW_ORDER}</td>
+								<td>
+									<!-- IF {ADMIN_EXTENSIONS_DETAILS_ROW_ORDER_INSTALLED} !== null AND {ADMIN_EXTENSIONS_DETAILS_ROW_ORDER_INSTALLED} != {ADMIN_EXTENSIONS_DETAILS_ROW_ORDER} -->
+										<span class="text-danger">{ADMIN_EXTENSIONS_DETAILS_ROW_ORDER_INSTALLED}</span> / <span class="text-success">{ADMIN_EXTENSIONS_DETAILS_ROW_ORDER}</span>
+									<!-- ELSE -->
+										{ADMIN_EXTENSIONS_DETAILS_ROW_ORDER}
+									<!-- ENDIF -->
+								</td>
 								<td>{ADMIN_EXTENSIONS_DETAILS_ROW_STATUS}</td>
 								<td class="action">
 <!-- BEGIN: ROW_PART_NOTINSTALLED -->

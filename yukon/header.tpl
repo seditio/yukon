@@ -123,12 +123,12 @@
 					</figure>
 					<ul class="list-unstyled mb-1 d-flex user_buttons">
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=profile')}" title="{PHP.L.Profile}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.usermanager} -->{PHP|cot_url('admin', 'm=other&p=usermanager&a=profile')}<!-- ELSE -->{PHP|cot_url('users','m=profile')}<!-- ENDIF -->" title="{PHP.L.Profile}">
 								{PHP.R.icon-gear}
 							</a>
 						</li>
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('users','m=details')}" title="{PHP.L.Page}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.usermanager} -->{PHP.usr.id|cot_url('admin', 'm=other&p=usermanager&a=details&id=$this')}<!-- ELSE -->{PHP|cot_url('users','m=details')}<!-- ENDIF -->" title="{PHP.L.Page}">
 								{PHP.R.icon-user}
 							</a>
 						</li>
@@ -153,6 +153,10 @@
 						<li>
 							{PHP.browser} / {PHP.os}
 						</li>
+					</ul>
+					<!-- IF {PHP.cot_plugins_active.clearcache} -->
+					<a href="{PHP|cot_url('clearcache', 'a=clearall')}" class="btn btn-danger btn-sm d-block mt-1">{PHP.clearcache_title}</a>
+					<!-- ENDIF -->
 				</div>
 
 				<div id="menu" class="accordion accordion-flush">
