@@ -123,12 +123,12 @@
 					</figure>
 					<ul class="list-unstyled mb-1 d-flex user_buttons">
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.usermanager} -->{PHP|cot_url('admin', 'm=other&p=usermanager&a=profile')}<!-- ELSE -->{PHP|cot_url('users','m=profile')}<!-- ENDIF -->" title="{PHP.L.Profile}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.um} -->{PHP|cot_url('admin', 'm=other&p=um&a=profile')}<!-- ELSE -->{PHP|cot_url('users','m=profile')}<!-- ENDIF -->" title="{PHP.L.Profile}">
 								{PHP.R.icon-gear}
 							</a>
 						</li>
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.usermanager} -->{PHP.usr.id|cot_url('admin', 'm=other&p=usermanager&a=details&id=$this')}<!-- ELSE -->{PHP|cot_url('users','m=details')}<!-- ENDIF -->" title="{PHP.L.Page}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.um} -->{PHP.usr.id|cot_url('admin', 'm=other&p=um&a=details')}<!-- ELSE -->{PHP|cot_url('users','m=details')}<!-- ENDIF -->" title="{PHP.L.Page}">
 								{PHP.R.icon-user}
 							</a>
 						</li>
