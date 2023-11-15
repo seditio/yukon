@@ -21,6 +21,9 @@ require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
 $R['theme-revision'] = 253;
 
+$R['userimg_img'] = '<img src="{$src}" alt="' . $L['Avatar'] . '" class="img-fluid {$class}" />';
+$R['userimg_default_avatar'] = '<img src="datas/defaultav/default.png" alt="' . $L['Avatar'] . '" class="img-fluid" />';
+
 function sedby_get_ip() {
 	// if user uses shared internet
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
