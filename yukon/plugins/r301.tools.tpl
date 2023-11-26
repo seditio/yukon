@@ -9,12 +9,12 @@
 								<table class="{PHP.R.admin-table-class}">
 									<thead>
 										<tr>
-											<th class="w-5">#</th>
-											<th class="w-30">{PHP.L.301_from}</th>
-											<th class="w-30">{PHP.L.301_to}</th>
-											<th class="w-10">{PHP.L.301_type}</th>
-											<th class="w-15">{PHP.L.301_date}</th>
-											<th class="w-10">{PHP.L.Action}</th>
+											<th class="">#</th>
+											<th class="">{PHP.L.301_from}</th>
+											<th class="">{PHP.L.301_to}</th>
+											<th class="">{PHP.L.301_type}</th>
+											<th class="">{PHP.L.301_date}</th>
+											<th class="">{PHP.L.Action}</th>
 										</tr>
 									</thead>
 									<tbody>

@@ -138,7 +138,8 @@ $().ready(function() {
 	$('table input[type=checkbox]').css('display','inline-block');
 	$('div.input-group input[type=checkbox]').addClass('form-check-input');
 
-	$('select, select#selectmenu').addClass('form-select w-auto me-1');
+	$('select').addClass('form-select');
+	$('select:not(#selectmenu)').addClass('w-auto me-1 d-inline-block');
 	$('div.input-group > select').removeClass('me-1');
 
 	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
