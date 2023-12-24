@@ -94,7 +94,7 @@
 <!-- IF {PHP.ifthistools} -->
 												<a title="{PHP.L.Administration}" href="{ADMIN_EXTENSIONS_JUMPTO_URL_TOOLS}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-user}<span>{PHP.L.Admin}</span></a>
 <!-- ENDIF -->
-<!-- IF {PHP.if_plg_standalone} -->
+<!-- IF {ADMIN_EXTENSIONS_JUMPTO_URL} -->
 												<a title="{PHP.L.Open}" href="{ADMIN_EXTENSIONS_JUMPTO_URL}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-folder-open}<span>{PHP.L.Open}</span></a>
 <!-- ENDIF -->
 											</div>

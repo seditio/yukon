@@ -10,6 +10,12 @@
 						<button type="submit" class="btn {PHP.R.admin-button-primary-class}">{PHP.L.Search}</button>
 					</div>
 				</form>
+				<!-- IF {PHP.id} -->
+				<div class="btn-group mt-3">
+					<a href="https://www.abuseipdb.com/check/{PHP.id}" class="btn btn-sm btn-primary" target="_blank">Check IP for Abuse</a>
+					<a href="{PHP|cot_url('admin', 'm=other&p=banlist&a=addip&ip2ban={PHP.id}')}" class="btn btn-sm btn-danger" target="_blank">Ban IP</a>
+				</div>
+				<!-- ENDIF -->
 			</div>
 		</div>
 	</div>

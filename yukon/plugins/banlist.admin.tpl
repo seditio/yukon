@@ -10,8 +10,10 @@
 					<table class="{PHP.R.admin-table-class}">
 						<thead>
 							<tr>
+								<th class="w-5">ID</th>
+								<th class="w-20">{PHP.L.Date}</th>
 								<th class="w-20">{PHP.L.banlist_ipmask}</th>
-								<th class="w-25">{PHP.L.banlist_emailmask}</th>
+								<th class="w-20">{PHP.L.Email}</th>
 								<th class="w-20">{PHP.L.banlist_reason}</th>
 								<th class="w-15">{PHP.L.banlist_duration}</th>
 								<th class="w-20">{PHP.L.Action}</th>
@@ -21,6 +23,8 @@
 <!-- BEGIN: ADMIN_BANLIST_ROW -->
 							<form name="savebanlist_{ADMIN_BANLIST_ROW_ID}" id="savebanlist_{ADMIN_BANLIST_ROW_ID}" action="{ADMIN_BANLIST_ROW_URL}" method="post">
 								<tr class="{PHP.R.admin-table-tr-class}">
+									<td>{ADMIN_BANLIST_ROW_ID}</td>
+									<td>{ADMIN_BANLIST_ROW_DATE}</td>
 									<td>{ADMIN_BANLIST_ROW_IP}</td>
 									<td>{ADMIN_BANLIST_ROW_EMAIL}</td>
 									<td>{ADMIN_BANLIST_ROW_REASON}</td>
@@ -29,6 +33,8 @@
 										<div class="btn-group">
 											<button type="submit" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-refresh}<span>{PHP.L.Update}</span></button>
 											<button type="submit" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}" onclick="window.location.replace('{ADMIN_BANLIST_ROW_DELURL}'); return false;">{PHP.R.icon-trash}<span>{PHP.L.Delete}</span></button>
+
+											<a href="{ADMIN_BANLIST_ROW_TOGGLEURL}">Toggle</a>
 										</div>
 									</td>
 								</tr>
