@@ -8,10 +8,10 @@
 				<tr>
 					<td>
 						<p class="fw-bold mb-1">
-							{PAGE_ROW_DATE_STAMP|cot_date('H:i d.m.y', $this)}:
+							{PAGE_ROW_BEGIN_STAMP|cot_date('H:i d.m.y', $this)}:
 							<!-- IF {PAGE_ROW_AREA} == 'page' -->
 							<!-- IF {PAGE_ROW_CODE_IS_NUMERIC} -->
-							<a href="{PAGE_ROW_PAGE_URL}">{PAGE_ROW_PAGE_SHORTTITLE} ({PHP.L.Page})</a>
+							<a href="{PAGE_ROW_PAGE_URL}">{PAGE_ROW_PAGE_TITLE} ({PHP.L.Page})</a>
 							<!-- ELSE -->
 							<a href="{PAGE_ROW_CAT_URL}">{PAGE_ROW_CAT_TITLE} ({PHP.L.Section})</a>
 							<!-- ENDIF -->

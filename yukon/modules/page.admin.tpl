@@ -52,20 +52,20 @@
 								</td>
 								<td class="text-start">
 									<div id="mor_{PHP.ii}" class='mor_info_on_off'>
-										<span class="fw-bold d-block" role="button">{ADMIN_PAGE_SHORTTITLE} ({ADMIN_PAGE_COUNT})</span>
+										<span class="fw-bold d-block" role="button">{ADMIN_PAGE_TITLE} ({ADMIN_PAGE_HITS})</span>
 										<div class="moreinfo pt-2">
 											<table class="table table-bordered">
 												<tr>
 													<td class="w-20">{PHP.L.Category}:</td>
-													<td class="w-80">{ADMIN_PAGE_CATPATH_SHORT}</td>
+													<td class="w-80">{ADMIN_PAGE_CAT_PATH_SHORT}</td>
 												</tr>
 												<tr>
 													<td>{PHP.L.Description}:</td>
-													<td>{ADMIN_PAGE_DESC}</td>
+													<td>{ADMIN_PAGE_DESCRIPTION}</td>
 												</tr>
 												<tr>
 													<td>{PHP.L.Text}:</td>
-													<td>{ADMIN_PAGE_TEXT|cot_cutstring($this, 500)}</td>
+													<td>{ADMIN_PAGE_TEXT|cot_string_truncate($this, 500)}</td>
 												</tr>
 											</table>
 										</div>

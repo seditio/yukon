@@ -7,7 +7,7 @@
 										{PAGE_ROW_NUM}.
 									</td>
 									<td>
-										<a href="{PAGE_ROW_URL}">{PAGE_ROW_SHORTTITLE}</a>
+										<a href="{PAGE_ROW_URL}">{PAGE_ROW_TITLE}</a>
 									</td>
 									<td>
 										{PAGE_ROW_SHOP_SERIAL}
