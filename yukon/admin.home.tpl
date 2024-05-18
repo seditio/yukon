@@ -97,7 +97,7 @@
 			<h2>{PHP.R.icon-basket}{PHP.L.shop_recent_orders}</h2>
 			<div class="wrapper">
 				<div class="{PHP.R.admin-table-responsive-container-class}">
-					{PHP|sedby_shop_orderlist()}
+					{PHP|sedby_shop_orderlist('5')}
 					<a href="{PHP|cot_url('admin', 'm=other&p=shop')}" class="btn btn-primary btn-sm mt-3">
 						{PHP.R.icon-hand-point-right}{PHP.L.shop_all_orders}
 					</a>
