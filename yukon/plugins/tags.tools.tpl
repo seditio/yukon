@@ -42,37 +42,29 @@
 						<tbody>
 <!-- BEGIN: ADMIN_TAGS_ROW -->
 							<tr class="{PHP.R.admin-table-tr-class}">
-								<td>{ADMIN_TAGS_CODE}</td>
-								<td>{ADMIN_TAGS_AREA}</td>
-								<td>{ADMIN_TAGS_COUNT}</td>
+								<td>{ADMIN_TAGS_ROW_CODE}</td>
+								<td>{ADMIN_TAGS_ROW_AREA}</td>
+								<td>{ADMIN_TAGS_ROW_COUNT}</td>
 								<td>
 									<div id="mor_{PHP.ii}" class='mor_info_on_off'>
-										<span class="d-block" role="button">{ADMIN_TAGS_ITEMS}</span>
+										<span class="d-block" role="button">{ADMIN_TAGS_ROW_ITEMS}</span>
 										<div class="moreinfo">
-<!-- BEGIN: ADMIN_TAGS_ROW_ITEMS -->
-											{ADMIN_TAGS_ITEM_TITLE}<br />
-<!-- END: ADMIN_TAGS_ROW_ITEMS -->
+											<!-- BEGIN: ADMIN_TAGS_ROW_ITEMS -->
+											<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} --><a href="{ADMIN_TAGS_ROW_ITEM_URL}"><!-- ENDIF -->{ADMIN_TAGS_ROW_ITEM_TITLE}<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} --></a><!-- ENDIF -->
+											<br />
+											<!-- END: ADMIN_TAGS_ROW_ITEMS -->
 										</div>
 									</div>
 								</td>
 								<td>
-									<form name="tagedit{PHP.ii}" action="{ADMIN_TAGS_FORM_ACTION}" method="post">
-										<input name="old_tag" type="hidden" value="{ADMIN_TAGS_CODE|htmlspecialchars($this)}" />
-										<input name="d" type="hidden" value="{PHP.d}" />
-										<input name="sorttype" type="hidden" value="{PHP.sorttype}" />
-										<input name="sortway" type="hidden" value="{PHP.sortway}" />
-										<input name="filter" type="hidden" value="{PHP.filter}" />
-										{ADMIN_TAGS_TAG}
-									</td>
-									<td>
-										<div class="btn-group">
-											<input name="action" type="submit" value="{PHP.L.Edit}" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}" />
-											<input name="action" type="submit" value="{PHP.L.Delete}" class="confirmLink btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}" />
+									<form name="tagedit{PHP.ii}" action="{ADMIN_TAGS_ROW_FORM_ACTION}" method="POST">
+										<input type="hidden" name="action" value="edit" />
+										<input type="hidden" name="old_tag" value="{ADMIN_TAGS_ROW_CODE|htmlspecialchars($this)}" />
+										<div class="input-group">
+											<input type="text" name="tag" value="{ADMIN_TAGS_ROW_CODE|htmlspecialchars($this)}" maxlength="255" />
+											<button type="submit" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.L.Edit}</button>
+											<a href="{ADMIN_TAGS_ROW_DELETE_CONFIRM_URL}" class="confirmLink btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.L.Delete}</a>
 										</div>
-<!-- BEGIN: NOPARSE -->
-										<a title="{PHP.L.Edit}" href="{ADMIN_TAGS_URL_FOR_EDIT}" target="_blank" class="button">{PHP.L.Edit}</a>
-										<a title="{PHP.L.Delete}" href="{ADMIN_TAGS_DEL_URL}" class="ajax button">{PHP.L.Delete}</a>
-<!-- END: NOPARSE -->
 									</form>
 								</td>
 							</tr>
@@ -81,12 +73,12 @@
 					</table>
 				</div>
 				<p class="{PHP.R.admin-pagination-p-class}">
-					{PHP.L.Total}: {ADMIN_TAGS_TOTALITEMS}, <span class="text-lowercase">{PHP.L.Onpage}:</span> {ADMIN_TAGS_COUNTER_ROW}
+					{PHP.L.Total}: {TOTAL_ENTRIES}, <span class="text-lowercase">{PHP.L.Onpage}:</span> {ENTRIES_ON_CURRENT_PAGE}
 				</p>
-<!-- IF {ADMIN_TAGS_PAGNAV} -->
+<!-- IF {PAGINATION} -->
 				<nav class="{PHP.R.admin-pagination-nav-class}" aria-label="Tags Pagination">
 					<ul class="pagination {PHP.R.admin-pagination-list-class}">
-						{ADMIN_TAGS_PAGINATION_PREV}{ADMIN_TAGS_PAGNAV}{ADMIN_TAGS_PAGINATION_NEXT}
+						{PREVIOUS_PAGE}{PAGINATION}{NEXT_PAGE}
 					</ul>
 				</nav>
 <!-- ENDIF -->
