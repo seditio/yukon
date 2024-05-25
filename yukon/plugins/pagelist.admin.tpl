@@ -5,7 +5,7 @@
 			<!-- BEGIN: PAGE_ROW -->
 			<tr>
 				<td class="w-20">
-					{PAGE_ROW_BEGIN_STAMP|cot_date('j M Y', $this)}
+					{PAGE_ROW_CREATED_STAMP|cot_date('j M Y', $this)}
 				</td>
 				<td class="w-70">
 					<a href="{PAGE_ROW_URL}">{PAGE_ROW_TITLE}</a>

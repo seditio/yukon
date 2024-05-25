@@ -10,7 +10,7 @@
 										<a href="{PAGE_ROW_URL}">{PAGE_ROW_TITLE}</a>
 									</td>
 									<td class="text-end text-nowrap">
-										{PHP.R.icon-eye} {PAGE_ROW_COUNT}
+										{PHP.R.icon-eye} {PAGE_ROW_HITS}
 									</td>
 								</tr>
 <!-- END: PAGE_ROW -->

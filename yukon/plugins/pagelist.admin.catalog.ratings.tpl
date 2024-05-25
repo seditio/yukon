@@ -13,7 +13,7 @@
 										{PAGE_ROW_SHOP_SERIAL}
 									</td>
 									<td class="text-end text-nowrap">
-										{PHP.R.icon-eye} {PAGE_ROW_COUNT}
+										{PHP.R.icon-eye} {PAGE_ROW_HITS}
 									</td>
 								</tr>
 <!-- END: PAGE_ROW -->
