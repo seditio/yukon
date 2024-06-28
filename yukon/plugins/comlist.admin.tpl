@@ -11,13 +11,13 @@
 							{PAGE_ROW_DATE_STAMP|cot_date('H:i d.m.y', $this)}:
 							<!-- IF {PAGE_ROW_AREA} == 'page' -->
 							<!-- IF {PAGE_ROW_CODE_IS_NUMERIC} -->
-							<a href="{PAGE_ROW_PAGE_URL}">{PAGE_ROW_PAGE_TITLE} ({PHP.L.Page})</a>
+							<a href="{PAGE_ROW_PAGE_URL}#com{PAGE_ROW_ID}">{PAGE_ROW_PAGE_TITLE} ({PHP.L.Page})</a>
 							<!-- ELSE -->
-							<a href="{PAGE_ROW_CAT_URL}">{PAGE_ROW_CAT_TITLE} ({PHP.L.Section})</a>
+							<a href="{PAGE_ROW_CAT_URL}#com{PAGE_ROW_ID}">{PAGE_ROW_CAT_TITLE} ({PHP.L.Section})</a>
 							<!-- ENDIF -->
 							<!-- ENDIF -->
 							<!-- IF {PAGE_ROW_AREA} == 'polls' -->
-							<a href="{PAGE_ROW_POLL_URL}">{PAGE_ROW_POLL_TITLE} ({PHP.L.Poll})</a>
+							<a href="{PAGE_ROW_POLL_URL}#com{PAGE_ROW_ID}">{PAGE_ROW_POLL_TITLE} ({PHP.L.Poll})</a>
 							<!-- ENDIF -->
 						</p>
 						<div class="in0 mb-1">
