@@ -26,7 +26,7 @@
 	<div class="container-fluid overflow-hidden">
 
 		<div class="row g-0">
-			<div id="topbar" class="col-12 p-0">
+			<div id="topbar" class="col p-0">
 				<div class="d-flex justify-content-between px-3">
 
 					<ul id="layout" class="list-unstyled overflow-hidden m-0">
@@ -55,27 +55,27 @@
 <!-- IF {PHP.cot_plugins_active.admindesktops} -->
 					<ul id="desktops" class="list-unstyled overflow-hidden m-0">
 						<li>
-							<a href="{PHP|cot_url('admin')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #1">
+							<a href="{PHP|cot_url('admin')}" class="btn btn-xs" title="{PHP.L.admin-desktop} #1" data-bs-toggle="tooltip" data-bs-placement="bottom">
 								{PHP.R.icon-desktop}<span>1</span>
 							</a>
 						</li>
 						<li>
-							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=2')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #2">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=2')}" class="btn btn-xs" title="{PHP.L.admin-desktop} #2" data-bs-toggle="tooltip" data-bs-placement="bottom">
 								{PHP.R.icon-desktop}<span>2</span>
 							</a>
 						</li>
 						<li>
-							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=3')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #3">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=3')}" class="btn btn-xs" title="{PHP.L.admin-desktop} #3" data-bs-toggle="tooltip" data-bs-placement="bottom">
 								{PHP.R.icon-desktop}<span>3</span>
 							</a>
 						</li>
 						<li class="d-none d-sm-block">
-							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=4')}" class="btn btn-xs" title="{PHP.L.adt_desktop} #4">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=4')}" class="btn btn-xs" title="{PHP.L.admin-desktop} #4" data-bs-toggle="tooltip" data-bs-placement="bottom">
 								{PHP.R.icon-desktop}<span>4</span>
 							</a>
 						</li>
 						<li class="d-none d-sm-block">
-							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=sa')}" class="btn btn-xs" title="{PHP.L.adt_desktop} SA">
+							<a href="{PHP|cot_url('admin', 'm=other&p=admindesktops&a=sa')}" class="btn btn-xs" title="{PHP.L.admin-desktop} SA" data-bs-toggle="tooltip" data-bs-placement="bottom">
 								{PHP.R.icon-desktop}<span>SA</span>
 							</a>
 						</li>

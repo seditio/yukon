@@ -19,7 +19,7 @@ Schemes=default:Default
 include_once cot_incfile('icons', 'plug', 'rc');
 require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
-$R['theme-revision'] = 254;
+$R['theme-revision'] = 261;
 
 $R['userimg_img'] = '<img src="{$src}" alt="' . $L['Avatar'] . '" class="img-fluid {$class}" />';
 $R['userimg_default_avatar'] = '<img src="datas/defaultav/default.png" alt="' . $L['Avatar'] . '" class="img-fluid" />';
@@ -81,9 +81,14 @@ $R['admin-home-best'] = 10;
 $R['admin-home-recent'] = 14;
 $R['admin-home-recent-stamp'] = $sys['now'] - $R['admin-home-recent'] * 86400;
 
+Resources::linkFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/preloader.css?v='.$R['theme-revision'], 'css', 1);
+
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/modalbox.css?v='.$R['theme-revision'], 'css', 50);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
 Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/responsive.css?v='.$R['theme-revision'], 'css', 52);
 
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/jquery.cookie.js', 'js', 99);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.js?v='.$R['theme-revision'], 'js', 100);
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.cookie.min.js', 'js', 80);
+
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.js?v='.$R['theme-revision'], 'js', 98);
+
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/preloader.js?v='.$R['theme-revision'], 'js', 99);

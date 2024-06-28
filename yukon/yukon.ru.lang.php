@@ -49,3 +49,7 @@ $L['admin-myip'] = 'Мой IP';
 // Declension
 
 $Ls['admin-hits'] = 'просмотр,просмотра,просмотров';
+
+// Admin Desktops Plugin
+
+$L['admin-desktop'] = 'Рабочий стол';

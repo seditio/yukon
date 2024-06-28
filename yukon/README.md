@@ -1,5 +1,5 @@
-#Yukon ver.1.10
-Bootstrap-based Cotonti Siena admin theme 
+#Yukon ver. 2.00b
+Bootstrap-based Cotonti Siena admin theme
 
 ##Description
 The Yukon theme was designed and built to augment or replace the standard one. The idea behind the project was to allow Cotonti Siena users to access main administration tools via mobile devices (smartphones or tablets), as well as rework usability and add minimalistic design to the back-end.
@@ -7,24 +7,30 @@ Besides the reworked .tpl files of the standard admin theme Yukon contains templ
 - forums
 - page
 - pfs
-- users
+- polls
 
 and the following plugins:
+- autoalias2
 - banlist
 - bbcode
+- catlist
+- comlist
 - comments
 - contact
+- hits
 - feedback
 - hits
 - ipsearch
+- maintenance_alert
+- pagelist
 - r301
 - ratings
 - referers
 - tags
+- topiclist
 - trashcan
 - urleditor
 - userimages
-- userman
 
 ##Installation
 1. Download and copy the theme into the themes/admin/yukon folder
@@ -48,6 +54,6 @@ Theme distributed under the BSD license.
 [Dmitri Beliavski](http://github.com/seditio)
 
 ##References
-- [github.com/seditio/yukon](http://github.com/seditio/yukon) -- Latest version of the Yukon Theme
-- [www.cotonti.com](http://www.cotonti.com) -- Cotonti CMF homepage
-- [www.seditio.by](http://www.seditio.by) -- we build Cotonti-powered websites here
+- [github.com/seditio/yukon](https://github.com/seditio/yukon) -- Latest version of the Yukon Theme
+- [www.cotonti.com](https://www.cotonti.com) -- Cotonti CMF homepage
+- [www.seditio.by](https://www.sed.by) -- we build Cotonti-powered websites here
