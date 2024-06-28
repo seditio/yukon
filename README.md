@@ -1,4 +1,4 @@
-# Yukon ver. 2.00b
+# Yukon ver. 3.10b
 Bootstrap-based Cotonti Siena admin theme
 
 ## Description
@@ -65,4 +65,4 @@ Theme distributed under the BSD license.
 ## References
 - [github.com/seditio/yukon](https://github.com/seditio/yukon) -- Latest version of the Yukon Theme
 - [www.cotonti.com](https://www.cotonti.com) -- Cotonti CMF homepage
-- [www.seditio.by](https://www.sed.by) -- we build Cotonti-powered websites here
+- [sed.by](https://sed.by) -- we build Cotonti-powered websites here
