@@ -38,13 +38,13 @@ and the following plugins:
 3. (Optional but recommened) Download and install [Adminstats Plugin](https://github.com/Dayver/adminstats) by Pavel *Dayver* Tkachenko to output configuration info at the admin homepage
 
 ### Required Plugins:
-https://github.com/seditio/cot_bootstrap
+- https://github.com/seditio/cot_bootstrap
 
 ### Recommended Plugins:
-https://github.com/seditio/analogue
-https://github.com/seditio/cot_comlist
-https://github.com/seditio/cot_icons
-https://github.com/seditio/cot_pagelist
+- https://github.com/seditio/analogue
+- https://github.com/seditio/cot_comlist
+- https://github.com/seditio/cot_icons
+- https://github.com/seditio/cot_pagelist
 
 ## User Feedback & Updates
 I try to update the theme as frequently as possible. Should you find a bug or have a suggestion, please [open an issue](https://github.com/seditio/yukon/issues) (English and Russian).
