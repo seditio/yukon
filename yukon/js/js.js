@@ -1,15 +1,6 @@
-$(window).on("load", function() {
-	function hidePreloader() {
-			preloader = $('div#preloader');
-			preloaderFadeOutTime = 500;
-			preloader.fadeOut(preloaderFadeOutTime, function() {
-				preloader.remove();
-			});
-	};
-	hidePreloader();
-});
-
 $().ready(function() {
+
+  // Responsive Navigation
 
 	(function() {
 
@@ -40,97 +31,100 @@ $().ready(function() {
 
 	})();
 
-	$('#removecookies a').click(function() {
-		$.removeCookie('showsidebar', { path: '/;SameSite=Lax', secure: true });			// Hide sidebar
-		$.removeCookie('hidenavigation', { path: '/;SameSite=Lax', secure: true });	// Hide main navigation
-		$.removeCookie('fullscreen', { path: '/;SameSite=Lax', secure: true });			// Eliminate margins to fill out all space
-		$.removeCookie('panelselection', { path: '/;SameSite=Lax', secure: true });	// Eliminate leftpanel choice
-		location.reload();
-		return false;
-	});
+  // Manage Cookies
 
-	if ($.cookie('showsidebar')) {
-		$('.container-fluid').addClass($.cookie('showsidebar'));
+  var cookiesSetSettings = { expires: 365, SameSite: 'strict', secure: true };
+
+  $('#removecookies a').click(function(e) {
+  	e.preventDefault();
+  	Cookies.remove('showsidebar');			// Hide sidebar
+  	Cookies.remove('hidenavigation');		// Hide main navigation
+  	Cookies.remove('fullscreen');				// Eliminate margins to fill out all space
+  	Cookies.remove('panelselection');		// Eliminate leftpanel choice
+  	location.reload();
+  });
+
+	if (Cookies.get('showsidebar')) {
+		$('.container-fluid').addClass(Cookies.get('showsidebar'));
 		var hdss = $('#showsidebar a').attr('data-title');
 		var hdss = hdss.split('/', 2);
 		$('#showsidebar a span').text(hdss[1]);
 	};
 
-	$('#showsidebar a').click(function() {
+	$('#showsidebar a').click(function(e) {
+    e.preventDefault();
 		if ($('.container-fluid').hasClass('sidebar-visible')) {
 			$('.container-fluid').removeClass('sidebar-visible');
 			var hdss = $('#showsidebar a').attr('data-title');
 			var hdss = hdss.split('/', 2);
 			$('#showsidebar a span').text(hdss[0]);
-			$.removeCookie('showsidebar', { path: '/;SameSite=Lax', secure: true });
-		}
-		else {
+			Cookies.remove('showsidebar');
+		} else {
 			$('.container-fluid').addClass('sidebar-visible');
 			var hdss = $('#showsidebar a').attr('data-title');
 			var hdss = hdss.split('/', 2);
 			$('#showsidebar a span').text(hdss[1]);
-			$.cookie('showsidebar', 'sidebar-visible', { expires: 365, path: '/;SameSite=Lax', secure: true });
+			Cookies.set('showsidebar', 'sidebar-visible', cookiesSetSettings);
 		}
-		return false;
 	});
 
-	if ($.cookie('hidenavigation')) {
-		$('nav#navigation div.row').addClass($.cookie('hidenavigation'));
+	if (Cookies.get('hidenavigation')) {
+		$('nav#navigation div.row').addClass(Cookies.get('hidenavigation'));
 		var hdns = $('#hidenavigation a').attr('data-title');
 		var hdns = hdns.split('/', 2);
 		$('#hidenavigation a span').text(hdns[1]);
 	};
 
-	$('#hidenavigation a').click(function() {
+	$('#hidenavigation a').click(function(e) {
+    e.preventDefault();
 		if ($('nav#navigation div.row').hasClass('d-none')) {
 			$('nav#navigation div.row').fadeIn().removeClass('d-none').addClass('d-flex');
 			var hdns = $('#hidenavigation a').attr('data-title');
 			var hdns = hdns.split('/', 2);
 			$('#hidenavigation a span').text(hdns[0]);
-			$.removeCookie('hidenavigation', { path: '/;SameSite=Lax', secure: true });
-		}
-		else {
+			Cookies.remove('hidenavigation');
+		} else {
 			$('nav#navigation div.row').addClass('d-none');
 			var hdns = $('#hidenavigation a').attr('data-title');
 			var hdns = hdns.split('/', 2);
 			$('#hidenavigation a span').text(hdns[1]);
-			$.cookie('hidenavigation', 'd-none', { expires: 365, path: '/;SameSite=Lax', secure: true });
+			Cookies.set('hidenavigation', 'd-none', cookiesSetSettings);
 		}
-		return false;
 	});
 
-	if ($.cookie('fullscreen')) {
-		$('.container-fluid').addClass($.cookie('fullscreen'));
+	if (Cookies.get('fullscreen')) {
+		$('.container-fluid').addClass(Cookies.get('fullscreen'));
 		var strs = $('#fullscreen a').attr('data-title');
 		var strs = strs.split('/', 2);
 		$('#fullscreen a span').text(strs[1]);
 	};
 
-	$('#fullscreen a').click(function() {
+	$('#fullscreen a').click(function(e) {
+    e.preventDefault();
 		if ($('.container-fluid:first').hasClass('exp')) {
 			$('.container-fluid:first').removeClass('exp');
 			var strs = $('#fullscreen a').attr('data-title');
 			var strs = strs.split('/', 2);
 			$('#fullscreen a span').text(strs[0]);
-			$.removeCookie('fullscreen', { path: '/;SameSite=Lax', secure: true });
-		}
-		else {
+			Cookies.remove('fullscreen');
+		} else {
 			$('.container-fluid:first').addClass('exp');
 			var strs = $('#fullscreen a').attr('data-title');
 			var strs = strs.split('/', 2);
 			$('#fullscreen a span').text(strs[1]);
-			$.cookie('fullscreen', 'exp', { expires: 365, path: '/;SameSite=Lax', secure: true });
+			Cookies.set('fullscreen', 'exp', cookiesSetSettings);
 		}
-		return false;
 	});
 
-	if ($.cookie('panelselection')) {
-		$('div' + $.cookie('panelselection')).addClass('show').prev().removeClass('collapsed');
+	if (Cookies.get('panelselection')) {
+		$('div' + Cookies.get('panelselection')).addClass('show').prev().removeClass('collapsed');
 	};
 
 	$('#menu div.accordion-button').click(function() {
-		$.cookie('panelselection', $(this).attr('data-bs-target'), { expires: 365, path: '/;SameSite=Lax', secure: true });
+		Cookies.set('panelselection', $(this).attr('data-bs-target'), cookiesSetSettings);
 	});
+
+  // Fix Form Classes
 
 	$('div#content div.wrapper table input[type=file]').addClass('form-control');
 	$('div#content div.wrapper table input[type=text]').addClass('form-control');
@@ -142,6 +136,10 @@ $().ready(function() {
 	$('select:not(#selectmenu)').addClass('w-auto me-1 d-inline-block');
 	$('div.input-group > select').removeClass('me-1');
 
-	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  // Init Bootstrap Tooltips
+
+  let tooltipElements = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipElements.forEach((el) => {
+    new bootstrap.Tooltip(el);
+  });
 });

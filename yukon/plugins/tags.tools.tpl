@@ -32,11 +32,11 @@
 					<table class="{PHP.R.admin-table-class}">
 						<thead>
 							<tr>
-								<th class="w-15">{PHP.L.Tag}</th>
-								<th class="w-10">{PHP.L.adm_area}</th>
-								<th class="w-10">{PHP.L.Count}</th>
-								<th class="w-30"> {PHP.L.adm_tag_item_area}</th>
-								<th class="w-35" colspan="2">{PHP.L.Action}</th>
+								<th class="w-20">{PHP.L.Tag}</th>
+								<th class="w-15">{PHP.L.adm_area}</th>
+								<th class="w-15">{PHP.L.Count}</th>
+								<th class="w-20"> {PHP.L.adm_tag_item_area}</th>
+								<th class="w-30" colspan="2">{PHP.L.Action}</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -50,8 +50,15 @@
 										<span class="d-block" role="button">{ADMIN_TAGS_ROW_ITEMS}</span>
 										<div class="moreinfo">
 											<!-- BEGIN: ADMIN_TAGS_ROW_ITEMS -->
-											<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} --><a href="{ADMIN_TAGS_ROW_ITEM_URL}"><!-- ENDIF -->{ADMIN_TAGS_ROW_ITEM_TITLE}<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} --></a><!-- ENDIF -->
-											<br />
+
+											<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} -->
+											<a href="{ADMIN_TAGS_ROW_ITEM_URL}">
+											<!-- ENDIF -->
+												{ADMIN_TAGS_ROW_ITEM_TITLE}
+											<!-- IF {ADMIN_TAGS_ROW_ITEM_URL} -->
+											</a>
+											<!-- ENDIF -->
+
 											<!-- END: ADMIN_TAGS_ROW_ITEMS -->
 										</div>
 									</div>
@@ -61,7 +68,7 @@
 										<input type="hidden" name="action" value="edit" />
 										<input type="hidden" name="old_tag" value="{ADMIN_TAGS_ROW_CODE|htmlspecialchars($this)}" />
 										<div class="input-group">
-											<input type="text" name="tag" value="{ADMIN_TAGS_ROW_CODE|htmlspecialchars($this)}" maxlength="255" />
+											<input type="text" class="form-control" name="tag" value="{ADMIN_TAGS_ROW_CODE|htmlspecialchars($this)}" maxlength="255" />
 											<button type="submit" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.L.Edit}</button>
 											<a href="{ADMIN_TAGS_ROW_DELETE_CONFIRM_URL}" class="confirmLink btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.L.Delete}</a>
 										</div>
