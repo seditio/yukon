@@ -107,10 +107,10 @@
 							{PHP.L.Total}: {ADMIN_PAGE_TOTALITEMS}, <span class="text-lowercase">{PHP.L.Onpage}:</span> {ADMIN_PAGE_ON_PAGE}
 						</p>
 <!-- ENDIF -->
-<!-- IF {ADMIN_PAGE_PAGNAV} -->
+<!-- IF {PAGINATION} -->
 						<nav class="{PHP.R.admin-pagination-nav-class}" aria-label="Page Pagination">
 							<ul class="pagination {PHP.R.admin-pagination-list-class}">
-								{ADMIN_PAGE_PAGINATION_PREV}{ADMIN_PAGE_PAGNAV}{ADMIN_PAGE_PAGINATION_NEXT}</ul>
+								{PREV_PAGE}{PAGINATION}{NEXT_PAGE}</ul>
 							</ul>
 						</nav>
 <!-- ENDIF -->
