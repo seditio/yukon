@@ -43,10 +43,10 @@
 									</tbody>
 								</table>
 							</form>
-<!-- IF {R301_PAGINATION} -->
+<!-- IF {PAGINATION} -->
 							<nav class="{PHP.R.admin-pagination-nav-class}" aria-label="r301 Pagination">
 								<ul class="pagination {PHP.R.admin-pagination-list-class}">
-									{R301_PREV}{R301_PAGINATION}{R301_NEXT}
+									{PREVIOUS_PAGE}{PAGINATION}{NEXT_PAGE}
 								</ul>
 							</nav>
 <!-- ENDIF -->

@@ -8,7 +8,7 @@
 				<tr>
 					<td>
 						<p class="fw-bold mb-1">
-							{PAGE_ROW_DATE_STAMP|cot_date('H:i d.m.y', $this)}:
+							{PAGE_ROW_DATE}:
 							<!-- IF {PAGE_ROW_AREA} == 'page' -->
 							<!-- IF {PAGE_ROW_CODE_IS_NUMERIC} -->
 							<a href="{PAGE_ROW_PAGE_URL}#com{PAGE_ROW_ID}">{PAGE_ROW_PAGE_TITLE} ({PHP.L.Page})</a>
