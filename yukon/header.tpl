@@ -30,23 +30,23 @@
 				<div class="d-flex justify-content-between px-3">
 
 					<ul id="layout" class="list-unstyled overflow-hidden m-0">
-						<li id="showsidebar">
-							<a href="#" class="btn btn-xs" data-title="{PHP.L.admin-show-sidebar}/{PHP.L.admin-hide-sidebar}">
+						<li>
+							<a href="#" id="sidebar_toggle" class="btn btn-xs" data-title="{PHP.L.admin-show-sidebar}/{PHP.L.admin-hide-sidebar}">
 								{PHP.R.icon-arrows-h}<span>{PHP.L.admin-show-sidebar}</span>
 							</a>
 						</li>
-						<li id="hidenavigation">
-							<a href="#" class="btn btn-xs" data-title="{PHP.L.admin-hide-menu}/{PHP.L.admin-show-menu}">
+						<li>
+							<a href="#" id="nav_toggle" class="btn btn-xs" data-title="{PHP.L.admin-hide-menu}/{PHP.L.admin-show-menu}">
 								{PHP.R.icon-arrows-v}<span>{PHP.L.admin-hide-menu}</span>
 							</a>
 						</li>
-						<li id="fullscreen">
-							<a href="#" class="btn btn-xs" data-title="{PHP.L.admin-fullscreen-off}/{PHP.L.admin-fullscreen-on}">
+						<li>
+							<a href="#" id="fs_toggle" class="btn btn-xs" data-title="{PHP.L.admin-fullscreen-off}/{PHP.L.admin-fullscreen-on}">
 								{PHP.R.icon-arrows-hv}<span>{PHP.L.admin-fullscreen-off}</span>
 							</a>
 						</li>
-						<li id="removecookies">
-							<a href="#" class="btn btn-xs">
+						<li>
+							<a href="#" id="clear_all" class="btn btn-xs">
 								{PHP.R.icon-xmark}<span>{PHP.L.Reset}</span>
 							</a>
 						</li>

@@ -60,8 +60,9 @@
 			.miniwidget ul li a,
 			.miniwidget ul li span			{ display: block; float: right; }
 
-	// .container-fluid.sidebar-visible ul#layout		{ margin-left: 240px; }
-	.container-fluid.sidebar-visible div#sidebar	{ display: block; flex: 0 0 15rem; }
+	body.sidebar-visible div#sidebar					{ display: block; flex: 0 0 15rem; }
+	body.nav-hidden nav#navigation > div.row	{ display: none; }
+	body.fs-off div.container-fluid						{ padding: 1rem; }
 }
 
 @media (min-width: 1200px)	{
