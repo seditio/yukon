@@ -2,7 +2,7 @@
 /* ====================
 [BEGIN_COT_THEME]
 Name=Yukon
-Version=3.20b
+Version=3.21b
 Schemes=default:Default
 [END_COT_THEME]
 ==================== */
@@ -19,7 +19,7 @@ Schemes=default:Default
 include_once cot_incfile('icons', 'plug', 'rc');
 require_once cot_rc($cfg['themes_dir'].'/admin/yukon/yukon.resources.php');
 
-$R['theme-revision'] = 261;
+$R['theme-revision'] = 262;
 
 $R['userimg_img'] = '<img src="{$src}" alt="' . $L['Avatar'] . '" class="img-fluid {$class}" />';
 $R['userimg_default_avatar'] = '<img src="datas/defaultav/default.png" alt="' . $L['Avatar'] . '" class="img-fluid" />';

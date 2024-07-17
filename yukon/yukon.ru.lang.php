@@ -24,9 +24,6 @@ $L['admin-queued'] = 'на утверждении';
 $L['admin-recent-pages'] = 'лучших новых страниц';
 $L['admin-ret-users'] = 'Посещения';
 
-// $L['admin-system-config'] = 'Настройки системы';
-// $L['admin-system-performance'] = 'Настройки системы';
-
 $L['admin-view-site'] = 'К сайту';
 $L['admin-within'] = 'за последние';
 
@@ -38,8 +35,8 @@ $L['admin-recent'] = 'новых страниц';
 $L['admin-hide-sidebar'] = 'Скрыть сайдбар';
 $L['admin-show-sidebar'] = 'Показать сайдбар';
 
-$L['admin-hide-menu'] = 'Скрыть меню';
-$L['admin-show-menu'] = 'Показать меню';
+$L['admin-hide-menu'] = 'Скрыть навигацию';
+$L['admin-show-menu'] = 'Показать навигацию';
 
 $L['admin-fullscreen-off'] = 'В окне';
 $L['admin-fullscreen-on'] = 'На весь экран';
