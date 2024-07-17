@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     fsToggle.querySelector('span').textContent = fsTitle[1];
   };
   if (localStorage.getItem('yukon-accordion')) {
-    document.getElementById(localStorage.getItem('yukon-accordion').slice(1)).classList.toggle('show').previousElementSibling.classList.toggle('collapsed');
+    let acc = localStorage.getItem('yukon-accordion').slice(1);
+    document.getElementById(acc).classList.toggle('show');
+    document.getElementById(acc).previousElementSibling.classList.toggle('collapsed');
   };
 });
 
