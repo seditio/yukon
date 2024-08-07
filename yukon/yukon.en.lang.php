@@ -11,6 +11,8 @@
 
 // Dashboard & Globals
 
+$L['admin-project-settings'] = 'Project Settings';
+
 $L['admin-activity-for'] = 'Activity for';
 $L['admin-best-pages'] = 'best pages ever';
 $L['admin-cache'] = 'Cache';

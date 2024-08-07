@@ -36,7 +36,7 @@
 <!-- IF {CONTACT_VAL} == val -->
 										<a href="{CONTACT_READLINK}" title="{PHP.L.contact_markread}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-arrow-down}<span>{PHP.L.contact_read}</span></a>
 <!-- ELSE -->
-										<a href="{CONTACT_UNREADLINK}" title="{PHP.L.contact_markunread}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-up}<span>{PHP.L.contact_unread}</span></a>
+										<a href="{CONTACT_UNREADLINK}" title="{PHP.L.contact_markunread}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-arrow-up}<span>{PHP.L.contact_unread}</span></a>
 <!-- ENDIF -->
 										<a href="{CONTACT_DELLINK}" title="{PHP.L.Delete}" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-trash}<span>{PHP.L.Delete}</span></a>
 									</div>

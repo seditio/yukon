@@ -11,6 +11,8 @@
 
 // Dashboard & Globals
 
+$L['admin-project-settings'] = 'Настройки проекта';
+
 $L['admin-activity-for'] = 'Активность за';
 $L['admin-best-pages'] = 'лучших страниц за все время';
 $L['admin-cache'] = 'Кэш';
