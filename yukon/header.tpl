@@ -157,6 +157,9 @@
 					<!-- IF {PHP.cot_plugins_active.clearcache} -->
 					<a href="{PHP|cot_url('clearcache', 'a=clearall')}" class="btn btn-danger btn-sm d-block mt-1">{PHP.clearcache_title}</a>
 					<!-- ENDIF -->
+					<!-- IF {PHP.cot_plugins_active.shop} -->
+					<a href="{PHP|cot_url('admin', 'm=config&n=edit&o=plug&p=shop')}" class="btn btn-success btn-sm d-block mt-1">Настройки магазина</a>
+					<!-- ENDIF -->
 					<!-- IF {PHP.project} -->
 					<a href="{PHP.project|cot_url('admin', 'm=config&n=edit&o=plug&p=$this')}" class="btn btn-success btn-sm d-block mt-1">{PHP.L.admin-project-settings}</a>
 					<!-- ENDIF -->
