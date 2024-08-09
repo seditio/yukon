@@ -33,8 +33,6 @@
 										<div class="btn-group">
 											<button type="submit" class="btn {PHP.R.admin-button-secondary-class} {PHP.R.admin-button-size-class}">{PHP.R.icon-refresh}<span>{PHP.L.Update}</span></button>
 											<button type="submit" class="btn {PHP.R.admin-button-danger-class} {PHP.R.admin-button-size-class}" onclick="window.location.replace('{ADMIN_BANLIST_ROW_DELURL}'); return false;">{PHP.R.icon-trash}<span>{PHP.L.Delete}</span></button>
-
-											<a href="{ADMIN_BANLIST_ROW_TOGGLEURL}">Toggle</a>
 										</div>
 									</td>
 								</tr>
