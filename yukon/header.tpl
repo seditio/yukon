@@ -116,9 +116,9 @@
 					</p>
 					<figure class="mb-2">
 <!-- IF {PHP.usr.profile.user_avatar} -->
-						<img src="{PHP.usr.profile.user_avatar}" alt="" class="img-fluid" />
+						<img src="{PHP.usr.profile.user_avatar}" alt="{PHP.L.Avatar}" class="img-fluid" />
 <!-- ELSE -->
-						<img src="datas/defaultav/blank.png" alt="" class="img-fluid" />
+						<img src="{PHP.R.users_defaultAvatarSrc}" alt="{PHP.L.Avatar}" class="img-fluid" />
 <!-- ENDIF -->
 					</figure>
 					<ul class="list-unstyled mb-1 d-flex user_buttons">
