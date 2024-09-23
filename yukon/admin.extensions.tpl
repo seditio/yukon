@@ -163,6 +163,12 @@
 								<td class="text-end">{PHP.L.Date}:</td>
 								<td class="text-start">{ADMIN_EXTENSIONS_DATE}</td>
 							</tr>
+							<!-- IF {ADMIN_EXTENSIONS_CATEGORY_TITLE} AND {ADMIN_EXTENSIONS_CATEGORY} != 'misc-ext' -->
+							<tr>
+								<td class="text-end">{PHP.L.Category}:</td>
+								<td>{ADMIN_EXTENSIONS_CATEGORY_TITLE}</td>
+							</tr>
+							<!-- ENDIF -->
 <!--//<tr>
 	<td>{PHP.L.adm_defauth_guests}:</td>
 	<td>{ADMIN_EXTENSIONS_ADMRIGHTS_AUTH_GUESTS} ({ADMIN_EXTENSIONS_AUTH_GUESTS})</td>
