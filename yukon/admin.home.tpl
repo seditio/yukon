@@ -13,17 +13,17 @@
 
 {FILE "{PHP.cfg.themes_dir}/admin/{PHP.cfg.admintheme}/warnings.tpl"}
 
-<!-- IF {PHP.cot_plugins_active.admincharts} -->
+<!-- IF {PHP|cot_plugin_active('admincharts')} -->
 {ADMIN_HOME_CHARTS}
 <!-- ENDIF -->
 
 <div class="row">
 
 	<div class="col-xl-4">
-		<!-- IF {PHP.cot_plugins_active.metrika} -->
+		<!-- IF {PHP|cot_plugin_active('metrika')} -->
 		{ADMIN_HOME_METRIKA}
 		<!-- ENDIF -->
-		<!-- IF {PHP.cot_plugins_active.pagelist} -->
+		<!-- IF {PHP|cot_plugin_active('pagelist')} -->
 		<div class="block">
 			<h2><i class="fa fa-file"></i> {PHP.R.admin-home-best} {PHP.L.admin-recent}</h2>
 			{PHP.R.admin-home-best|sedby_pagelist('pagelist.admin', $this, 'page_date DESC')}
@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="col-xl-4">
-		<!-- IF {PHP.cot_plugins_active.adminboard} -->
+		<!-- IF {PHP|cot_plugin_active('adminboard')} -->
 		<div class="block">
 			<h2>{PHP.R.icon-comment}Admin Board / {PHP.sys.now|cot_date('j F', $this)}</h2>
 			<div class="wrapper">
@@ -51,7 +51,7 @@
 		</div>
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.nbrb} -->
+		<!-- IF {PHP|cot_plugin_active('nbrb')} -->
 		<div class="block">
 			<h2>{PHP.R.icon-right-left}Курсы валют по Нацбанку от {PHP.rate.ondate}</h2>
 			<div class="wrapper">
@@ -92,7 +92,7 @@
 		</div>
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.shop} -->
+		<!-- IF {PHP|cot_plugin_active('shop')} -->
 		<div class="block">
 			<h2>{PHP.R.icon-basket}{PHP.L.shop_recent_orders}</h2>
 			<div class="wrapper">
@@ -106,15 +106,15 @@
 		</div>
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.feedback} -->
+		<!-- IF {PHP|cot_plugin_active('feedback')} -->
 		{PHP|feedback_widget('feedback.admin.home', 5)}
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.comlist} AND {PHP.cot_plugins_active.comments} -->
+		<!-- IF {PHP|cot_plugin_active('comlist')} AND {PHP|cot_plugin_active('comments')} -->
 		{PHP|sedby_comlist('comlist.admin', 4, 'com_date DESC')}
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.thanks} -->
+		<!-- IF {PHP|cot_plugin_active('thanks')} -->
 		<div class="block">
 			<h2>{PHP.R.icon-gears}{PHP.L.thanks_title}</h2>
 			<div class="wrapper">
@@ -125,7 +125,7 @@
 	</div>
 
 	<div class="col-xl-4">
-		<!-- IF {PHP.cot_plugins_active.catlist} -->
+		<!-- IF {PHP|cot_plugin_active('catlist')} -->
 		<div class="block">
 			<h2>{PHP.R.icon-folder-tree}{PHP.L.Sections}</h2>
 			<div class="wrapper">
@@ -136,7 +136,7 @@
 		</div>
 		<!-- ENDIF -->
 
-		<!-- IF {PHP.cot_plugins_active.customlogs} AND {PHP.usr.id} == 1 -->
+		<!-- IF {PHP|cot_plugin_active('customlogs')} AND {PHP.usr.id} == 1 -->
 		<div class="block">
 			<h2 class="text-truncate">{PHP.R.icon-chart-line}Сторонняя активность на сайте</h2>
 			<div class="wrapper bg-warning-subtle">
@@ -151,7 +151,7 @@
 		{ADMIN_HOME_MAINPANEL}
 		<!-- END: MAINPANEL -->
 
-		<!-- IF {PHP.cot_plugins_active.adminstats} -->
+		<!-- IF {PHP|cot_plugin_active('adminstats')} -->
 		<!-- BEGIN: NOPARSE -->
 		<div class="block">
 			<h2>{PHP.R.icon-code}{PHP.L.admin-cache}:</h2>

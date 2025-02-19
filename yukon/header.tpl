@@ -52,7 +52,7 @@
 						</li>
 					</ul>
 
-<!-- IF {PHP.cot_plugins_active.admindesktops} -->
+<!-- IF {PHP|cot_plugin_active('admindesktops')} -->
 					<ul id="desktops" class="list-unstyled overflow-hidden m-0">
 						<li>
 							<a href="{PHP|cot_url('admin')}" class="btn btn-xs" title="{PHP.L.admin-desktop} #1" data-bs-toggle="tooltip" data-bs-placement="bottom">
@@ -123,16 +123,16 @@
 					</figure>
 					<ul class="list-unstyled mb-1 d-flex user_buttons">
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.um} -->{PHP|cot_url('admin', 'm=other&p=um&a=profile')}<!-- ELSE -->{PHP|cot_url('users','m=profile')}<!-- ENDIF -->" title="{PHP.L.Profile}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP|cot_plugin_active('um')} -->{PHP|cot_url('admin', 'm=other&p=um&a=profile')}<!-- ELSE -->{PHP|cot_url('users','m=profile')}<!-- ENDIF -->" title="{PHP.L.Profile}">
 								{PHP.R.icon-gear}
 							</a>
 						</li>
 						<li class="flex-fill">
-							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP.cot_plugins_active.um} -->{PHP.usr.id|cot_url('admin', 'm=other&p=um&a=details')}<!-- ELSE -->{PHP|cot_url('users','m=details')}<!-- ENDIF -->" title="{PHP.L.Page}">
+							<a class="btn text-center p-1 border-dark-subtle d-block" href="<!-- IF {PHP|cot_plugin_active('um')} -->{PHP.usr.id|cot_url('admin', 'm=other&p=um&a=details')}<!-- ELSE -->{PHP|cot_url('users','m=details')}<!-- ENDIF -->" title="{PHP.L.Page}">
 								{PHP.R.icon-user}
 							</a>
 						</li>
-<!-- IF {PHP.cot_modules.pm} -->
+<!-- IF {PHP|cot_module_active('pm')} -->
 						<li class="flex-fill position-relative">
 							<a class="btn text-center p-1 border-dark-subtle d-block" href="{PHP|cot_url('pm')}" title="{PHP.L.Private_Messages}">
 								{PHP.R.icon-comment}
@@ -154,10 +154,10 @@
 							{PHP.browser} / {PHP.os}
 						</li>
 					</ul>
-					<!-- IF {PHP.cot_plugins_active.clearcache} -->
+					<!-- IF {PHP|cot_plugin_active('clearcache')} -->
 					<a href="{PHP|cot_url('clearcache', 'a=clearall')}" class="btn btn-danger btn-sm d-block mt-1">{PHP.clearcache_title}</a>
 					<!-- ENDIF -->
-					<!-- IF {PHP.cot_plugins_active.shop} -->
+					<!-- IF {PHP|cot_plugin_active('shop')} -->
 					<a href="{PHP|cot_url('admin', 'm=config&n=edit&o=plug&p=shop')}" class="btn btn-success btn-sm d-block mt-1">Настройки магазина</a>
 					<!-- ENDIF -->
 					<!-- IF {PHP.project} -->
@@ -226,7 +226,7 @@
 							</div>
 						</div>
 					</div>
-<!-- IF {PHP.cot_modules.page} -->
+<!-- IF {PHP|cot_module_active('page')} -->
 					<div class="accordion-item menu_entry">
 						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false" aria-controls="menu3">{PHP.L.Pages}</div>
 						<div id="menu3" class="accordion-collapse collapse" data-bs-parent="#menu">
@@ -244,7 +244,7 @@
 									<li>
 										{PHP.R.icon-folder-tree}<a href="{PHP|cot_url('admin','m=structure&n=page')}">{PHP.L.Structure}</a>
 									</li>
-<!-- IF {PHP.cot_plugins_active.csv} -->
+<!-- IF {PHP|cot_plugin_active('csv')} -->
 									<li>
 										{PHP.R.icon-database}<a href="{PHP.usr.id|cot_url('admin','m=other&p=csv')}">CSV Import / Export</a>
 									</li>
@@ -254,7 +254,7 @@
 						</div>
 					</div>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_modules.forums} -->
+<!-- IF {PHP|cot_module_aactive('forums')} -->
 					<div class="accordion-item menu_entry">
 						<div class="accordion-button collapsed fw-bold text-uppercase px-3 py-2" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false" aria-controls="menu4">{PHP.L.Forums}</div>
 						<div id="menu4" class="accordion-collapse collapse" data-bs-parent="#menu">
@@ -313,7 +313,7 @@
 					</div>
 				</div>
 
-<!-- IF {PHP.cot_plugins_active.adminstats} -->
+<!-- IF {PHP|cot_plugin_active('adminstats')} -->
 				<div class="miniwidget block">
 					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.admin-engine}:</span>
 					<ul class="list-unstyled m-0">
@@ -371,20 +371,20 @@
 				<div class="miniwidget block">
 					<span class="fw-bold mb-1 pb-1 border-bottom border-dark-subtle d-block">{PHP.L.admin-activity-for} {PHP.R.admin-home-recent|cot_declension($this, Days)}:</span>
 					<ul class="list-unstyled m-0">
-<!-- IF {PHP.cot_modules.page} -->
+<!-- IF {PHP/cot_module_active('page')} -->
 						<li>{PHP.L.home_newpages}: <span>{PHP.R.admin-home-recent|item_counter('pages', $this)}</span></li>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_plugins_active.comments} -->
+<!-- IF {PHP|cot_plugin_active('comments')} -->
 						<li>{PHP.L.admin-new-comments}: <span>{PHP.R.admin-home-recent|item_counter('comments', $this)}</span></li>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_modules.forums} -->
+<!-- IF {PHP|cot_module_active('forums')} -->
 						<li>{PHP.L.home_newtopics}: <span>{PHP.R.admin-home-recent|item_counter('topics', $this)}</span></li>
 						<li>{PHP.L.home_newposts}: <span>{PHP.R.admin-home-recent|item_counter('posts', $this)}</span></li>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_modules.pm} -->
+<!-- IF {PHP|cot_module_active('pm')} -->
 						<li>{PHP.L.home_newpms}: <span>{PHP.R.admin-home-recent|item_counter('pm', $this)}</span></li>
 <!-- ENDIF -->
-<!-- IF {PHP.cot_modules.polls} -->
+<!-- IF {PHP|cot_module_active('polls')} -->
 						<li>{PHP.L.admin-new-polls}: <span>{PHP.R.admin-home-recent|item_counter('polls', $this)}</span></li>
 <!-- ENDIF -->
 						<li>{PHP.L.home_newusers}: <span>{PHP.R.admin-home-recent|item_counter('users_reg', $this)}</span></li>
