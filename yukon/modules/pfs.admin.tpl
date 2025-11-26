@@ -8,7 +8,7 @@
 		</div>
 <!-- ENDIF -->
 		<div class="block">
-			<h2>{PHP.R.icon-ug}{PHP.L.PFS}</h2>
+			<h2>{PHP.R.icon-plug}{PHP.L.PFS}</h2>
 			<div class="wrapper">
 				<div class="btn-group">
 					<a title="{PHP.L.Configuration}" href="{ADMIN_PFS_URL_CONFIG}" class="btn {PHP.R.admin-button-primary-class} {PHP.R.admin-top-button-size-class}">{PHP.R.icon-gear}{PHP.L.Configuration}</a>
