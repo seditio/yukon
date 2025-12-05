@@ -21,7 +21,7 @@
 
 	<div class="col-xl-4">
 		<!-- IF {PHP|cot_plugin_active('metrika')} -->
-		{ADMIN_HOME_METRIKA}
+		{PHP|sedby_getmetrika()}
 		<!-- ENDIF -->
 		<!-- IF {PHP|cot_plugin_active('pagelist')} -->
 		<div class="block">

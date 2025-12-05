@@ -81,22 +81,22 @@ $R['admin-home-best'] = 10;
 $R['admin-home-recent'] = 14;
 $R['admin-home-recent-stamp'] = $sys['now'] - $R['admin-home-recent'] * 86400;
 
-Resources::linkFile($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/preloader.css?v='.$R['theme-revision'], 'css', 1);
+Resources::linkFile($cfg['themes_dir'] . '/admin/' . $cfg['admintheme'] . '/css/preloader.css?v=' . $R['theme-revision'], 'css', 1);
 
 // Bootstrap
 Resources::linkFileFooter('lib/bootstrap/css/bootstrap.min.css', 'css', 49);
 Resources::linkFileFooter('lib/bootstrap/js/bootstrap.bundle.min.js', 'js', 98);
 
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/modalbox.css?v='.$R['theme-revision'], 'css', 50);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/styles.css?v='.$R['theme-revision'], 'css', 51);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/css/responsive.css?v='.$R['theme-revision'], 'css', 52);
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/' . $cfg['admintheme'] . '/css/modalbox.css?v=' . $R['theme-revision'], 'css', 50);
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/' . $cfg['admintheme'] . '/css/styles.css?v=' . $R['theme-revision'], 'css', 51);
+Resources::linkFileFooter($cfg['themes_dir'].'/admin/' . $cfg['admintheme'] . '/css/responsive.css?v=' . $R['theme-revision'], 'css', 52);
 
 // Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.cookie.min.js', 'js', 80);
 // Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/cookies.js', 'js', 81);
 
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/localstorage.js?v='.$R['theme-revision'], 'js', 96);
+Resources::linkFileFooter($cfg['themes_dir'] . '/admin/'.$cfg['admintheme'] . '/js/localstorage.js?v=' . $R['theme-revision'], 'js', 96);
 
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/fixforms.js?v='.$R['theme-revision'], 'js', 97);
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/js.js?v='.$R['theme-revision'], 'js', 98);
+Resources::linkFileFooter($cfg['themes_dir'] . '/admin/'.$cfg['admintheme'] . '/js/fixforms.js?v=' . $R['theme-revision'], 'js', 97);
+Resources::linkFileFooter($cfg['themes_dir'] . '/admin/'.$cfg['admintheme'] . '/js/js.js?v=' . $R['theme-revision'], 'js', 98);
 
-Resources::linkFileFooter($cfg['themes_dir'].'/admin/'.$cfg['admintheme'].'/js/preloader.js?v='.$R['theme-revision'], 'js', 99);
+Resources::linkFileFooter($cfg['themes_dir'] . '/admin/'.$cfg['admintheme'] . '/js/preloader.js?v=' . $R['theme-revision'], 'js', 99);
